@@ -8,7 +8,7 @@ owners: []
 provenance:
   code_fingerprint: sha256:e6f3bd7ab8ace036cc460dc03622a340d68cfe16142b6bc07f890820cc800fa0
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: FileResourceLoader가 파일시스템 경로에서 .vm 템플릿을 로드한다. 기본 로더이며 수정 감지 후 자동 재로딩을 지원한다.
 title: 파일시스템 리소스 로딩

@@ -9,7 +9,7 @@ owners: []
 provenance:
   code_fingerprint: sha256:6905594b4aac63e8202b5ca7c0c4ece534baece3401d4d9fb495072108eb89ce
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: 컬렉션·배열·맵·이터레이터를 순회하는 VTL 반복 지시어. $velocityCount와 $velocityHasNext 내장 변수로
   인덱스·끝 여부를 확인할 수 있다.

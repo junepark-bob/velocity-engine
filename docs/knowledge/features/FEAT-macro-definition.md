@@ -9,7 +9,7 @@ owners: []
 provenance:
   code_fingerprint: sha256:731b8a848b29ceb2946fc60a6f6b82b11fc3e56f302cb505963a52042ba966cd
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: 재사용 가능한 VTL 블록을 매크로로 정의한다. 파라미터를 받아 인라인·글로벌 범위로 사용할 수 있으며 Java의 메서드 정의와 유사하다.
 title: '#macro 매크로 정의'

@@ -8,9 +8,9 @@ code:
 id: COMP-template-engine
 owners: []
 provenance:
-  code_fingerprint: sha256:204a1af3e14c021494872e9334f85e2646f02ad7d8fa67dcfc9acc29622992b6
+  code_fingerprint: sha256:26432a7b94102f086c1b508b2e2bb1471f6d08efa175ab92c4460ec8ce1bd098
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: 외부에 노출되는 공개 API 진입점. 템플릿 파싱과 VTL 컨텍스트 병합을 담당하며 Spring MVC의 ViewResolver +
   View 역할에 해당한다.

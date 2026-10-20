@@ -8,7 +8,7 @@ owners: []
 provenance:
   code_fingerprint: sha256:c6b1a69edfdf381ed56df6741ebce24efe77120d640903a1c457de31124112e0
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: JavaCC 파서의 특수문자(# $ * @)를 변경해 Markdown 등 다른 포맷과 충돌 없이 VTL을 사용할 수 있다. ParserConfiguration으로
   설정하며 2.5+ 버전에서 $ 변경은 deprecated다.

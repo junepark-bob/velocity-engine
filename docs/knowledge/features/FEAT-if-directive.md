@@ -8,7 +8,7 @@ owners: []
 provenance:
   code_fingerprint: sha256:e7d8a688c47b804262cde1c16b9e76b07875057f6a32cc0989f642046b9b7de8
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: 'VTL 조건 분기 지시어. #if/#elseif/#else/#end로 구성되며 null·false·빈 컬렉션을 모두 false로
   평가하는 Velocity 고유 truthy 규칙을 적용한다.'

@@ -9,7 +9,7 @@ owners: []
 provenance:
   code_fingerprint: sha256:a5306147ddd3f0bcaf3790784bd72f5ec479271c0958f6ed200695a200456150
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: 엔진 초기화와 설정을 보관하는 중앙 조율자. Spring의 ApplicationContext에 해당하며 파서 풀·리소스 관리자·지시어
   레지스트리·인트로스펙션을 묶는다.

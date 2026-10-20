@@ -311,7 +311,7 @@ public class VelocityEngine implements RuntimeConstants
     public Template getTemplate(String name)
         throws ResourceNotFoundException, ParseErrorException
     {
-        return ri.getTemplate( name );
+        return ri.getTemplate( name, RuntimeConstants.ENCODING_DEFAULT );
     }
 
     /**

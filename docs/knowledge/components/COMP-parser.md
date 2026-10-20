@@ -10,7 +10,7 @@ owners: []
 provenance:
   code_fingerprint: sha256:fb3946f59fbd816e58dbf923f2fb4e812b6a3b9b66b7c2c103feed65be676732
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: JavaCC로 생성된 VTL 문법 파서를 풀로 관리한다. 파서는 재진입 불가라서 동시 요청마다 별도 인스턴스를 대여하고 반납하는 풀
   방식을 사용한다.

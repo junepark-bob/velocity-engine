@@ -9,7 +9,7 @@ owners: []
 provenance:
   code_fingerprint: sha256:05da9c0e211896ffc92446aa7ceca8da917588dd50c503d081ec212649213412
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: 템플릿에 주입되는 키-값 데이터 컨테이너. Spring MVC의 Model과 동일한 역할로, VTL 변수 조회·저장·체이닝을 담당한다.
 title: 컨텍스트 API (Context API)

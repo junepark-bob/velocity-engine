@@ -8,7 +8,7 @@ owners: []
 provenance:
   code_fingerprint: sha256:bf80387551f0acd31bf4a53a0b70852f3fcb47dd76e96c4d83272f765a8a2956
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: ClasspathResourceLoader가 클래스패스(JAR 내부 포함)에서 .vm 파일을 로드한다. 배포 시 JAR 안에 템플릿을
   패키징하는 표준 방식이다.

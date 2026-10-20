@@ -6,9 +6,9 @@ code:
 id: ARCH-velocity-engine-core
 owners: []
 provenance:
-  code_fingerprint: sha256:c2c28206e2e321638333283f56effc92c7ef877568e4a8a0202cdc60ea64a076
+  code_fingerprint: sha256:32483c579b5cc1d8114f5c9845707945cf50b8395465d515552167d619b43258
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: Java 기반 범용 템플릿 엔진. VTL(Velocity Template Language)을 파싱해 컨텍스트 데이터와 병합하여 텍스트를
   생성한다. RuntimeInstance가 중심 조율자 역할을 하며 파서 풀·리소스 로더·지시어 엔진이 협력한다.

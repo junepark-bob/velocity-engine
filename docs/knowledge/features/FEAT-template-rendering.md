@@ -6,9 +6,9 @@ code:
 id: FEAT-template-rendering
 owners: []
 provenance:
-  code_fingerprint: sha256:e0ebe92905c7ee1346d71d89c565857139c5e2da7071a573eccc0bd7d0576976
+  code_fingerprint: sha256:3530bc5182342fce5963b7d906c9cdd909eada4a24b9edd593de2ca33740a707
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: VTL 템플릿 파일과 VelocityContext를 병합해 최종 텍스트를 생성하는 핵심 기능. VelocityEngine.merge()가
   진입점이다.

@@ -8,7 +8,7 @@ owners: []
 provenance:
   code_fingerprint: sha256:6d578e96fa87577e4b3e6e3b285bfbdbc7a92987c74092dc84642322c0cf84da
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: VTL 문법 파서를 JavaCC로 구현하고, 특수문자 커스터마이징을 위한 빌드 타임 파서 재생성을 공식 지원한다.
 title: 'ADR: JavaCC 기반 파서 채택'

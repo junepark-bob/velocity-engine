@@ -8,7 +8,7 @@ owners: []
 provenance:
   code_fingerprint: sha256:b8d6b704cb0aabed4439165b81a4a3fd4562f25172886cca97d416b8c073c4f4
   created_by: kn-new
-  fingerprint_commit: 6f6290c3
+  fingerprint_commit: 6d21dbf7
 status: active
 summary: VelocityContext를 안전하고 효율적으로 사용하기 위한 체인·중첩·스레드 안전성 지침.
 title: VelocityContext 사용 모범 사례
