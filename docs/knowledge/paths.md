@@ -18,6 +18,7 @@
 | velocity-engine-core/src/main/java/org/apache/velocity/runtime/ParserConfiguration.java | COMP-parser, FEAT-custom-parser |
 | velocity-engine-core/src/main/java/org/apache/velocity/runtime/ParserPool.java | COMP-parser |
 | velocity-engine-core/src/main/java/org/apache/velocity/runtime/ParserPoolImpl.java | COMP-parser |
+| velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeConstants.java | CTR-CONTRACT-runtime-properties |
 | velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeInstance.java | COMP-runtime-engine |
 | velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeServices.java | COMP-runtime-engine |
 | velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive | COMP-directive-engine |

@@ -1,5 +1,5 @@
 # 시스템 지식 목록
-> 자동 생성 (`kn index`). 직접 고치지 마세요. 항목 21개
+> 자동 생성 (`kn index`). 직접 고치지 마세요. 항목 22개
 
 ## 아키텍처
 | ID | 제목 | 요약 | 코드 |
@@ -41,3 +41,8 @@
 | ID | 제목 | 요약 | 코드 |
 |---|---|---|---|
 | GUIDE-velocity-context-best-practices | VelocityContext 사용 모범 사례 | VelocityContext를 안전하고 효율적으로 사용하기 위한 체인·중첩·스레드 안전성 지침. | velocity-engine-core/src/main/java/org/apache/velocity/context/** |
+
+## 계약
+| ID | 제목 | 요약 | 코드 |
+|---|---|---|---|
+| CTR-CONTRACT-runtime-properties | Velocity 런타임 설정 속성 계약 | RuntimeConstants.java에 선언된 Velocity 런타임 설정 키·기본값 계약. 키 이름 변경 및 기본값 수정 규칙을 정의한다. | velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeConstants.java |
