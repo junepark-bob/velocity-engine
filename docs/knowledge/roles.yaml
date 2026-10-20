@@ -1,0 +1,11 @@
+roles:
+  architect:
+  - '@team/architects'
+  tech-lead:
+  - '@team/leads'
+type_owners:
+  architecture:
+  - architect
+  decisions:
+  - architect
+item_owners: {}

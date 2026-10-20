@@ -1,0 +1,47 @@
+# docs/knowledge/sources.yaml — 비밀정보는 넣지 않음 (토큰은 .env)
+profile: demo                          # demo | internal  (B16: 프로필을 섞지 않음)
+allowed_hosts:
+  - <confluence-host>                  # 예: cwiki.apache.org
+  - <jira-host>                        # 예: issues.apache.org
+  - <vendor-site>.atlassian.net
+
+git:
+  platform: github
+  repo: <username>/<repo-name>
+  default_branch: main
+  issue_key_patterns: []               # 예: ["PROJ-\\d+"]
+
+confluence:
+  instances:
+    - name: primary
+      base_url: https://<confluence-host>/confluence
+      api: datacenter                  # datacenter | cloud
+      access: read-only
+      spaces: [{key: <SPACE_KEY>}]
+  publish_to: ""                       # AI 생성 페이지를 만드는 인스턴스 이름
+
+jira:
+  instances:
+    - name: primary
+      base_url: https://<jira-host>/jira
+      api: datacenter                  # datacenter | cloud
+      access: read-only
+      project_keys: [<PROJECT_KEY>]
+  export_target: primary
+  export_scopes:
+    initial-backlog:
+      types: [feature, component]
+      issue_type: story
+      max: 30
+    doc-sync:
+      issue_type: task
+    defect-candidate:
+      issue_type: task
+      extra_labels: [kn-defect-candidate]
+
+policies:
+  approval_policy: defer               # block | defer (B8)
+  restricted_mode: on-demand           # on-demand | encrypted (B23)
+  restricted_policy: title             # title | id-only (B17)
+
+credentials: env                       # KN_<인스턴스이름>_TOKEN, KN_<인스턴스이름>_EMAIL

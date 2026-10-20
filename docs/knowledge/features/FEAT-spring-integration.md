@@ -1,0 +1,52 @@
+---
+id: FEAT-spring-integration
+type: feature
+title: "Spring Framework 통합"
+status: active
+summary: "spring-velocity-support 모듈이 VelocityEngineFactoryBean을 제공해 Spring 빈으로 VelocityEngine을 관리한다. Spring 6/7(Java 17+)과 Spring 5(레거시) 모듈로 분리된다."
+aliases: []
+owners: []
+classification: internal
+code:
+  - spring-velocity-support/src/main/java/org/apache/velocity/spring/
+provenance:
+  created_by: kn-new
+---
+
+## 목적
+
+Spring IoC 컨테이너에서 `VelocityEngine`을 빈으로 관리하고 `@Autowired`로 주입받을 수 있게 한다. 기존 Spring MVC 프로젝트에서 `VelocityEngine`을 사용하는 레거시 코드베이스 지원이 주 목적이다.
+
+## 동작 방식
+
+`VelocityEngineFactoryBean`이 `FactoryBean<VelocityEngine>`을 구현한다. Spring이 빈 초기화 시 `VelocityEngine.init()`을 자동 호출한다. `SpringResourceLoader`가 Spring `Resource` 추상화를 통해 클래스패스·파일시스템·URL 리소스를 통합 처리한다.
+
+## 사용 예시
+
+```java
+// Spring Boot @Configuration
+@Bean
+public VelocityEngine velocityEngine() throws VelocityException, IOException {
+    VelocityEngineFactoryBean factory = new VelocityEngineFactoryBean();
+    Properties p = new Properties();
+    p.setProperty("resource.loaders", "classpath");
+    p.setProperty("resource.loader.classpath.class",
+        "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
+    factory.setVelocityProperties(p);
+    return factory.createVelocityEngine();
+}
+```
+
+```xml
+<!-- Spring XML (레거시) -->
+<bean id="velocityEngine" class="org.apache.velocity.spring.VelocityEngineFactoryBean">
+  <property name="velocityProperties">
+    <props>
+      <prop key="resource.loaders">classpath</prop>
+    </props>
+  </property>
+</bean>
+```
+
+<!-- kn:generated:start source=git-log -->
+<!-- kn:generated:end -->
