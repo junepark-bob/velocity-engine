@@ -1,5 +1,5 @@
 ---
-id: CTR-CONTRACT-runtime-properties
+id: CTR-runtime-properties
 type: contract
 title: "Velocity 런타임 설정 속성 계약"
 status: proposed

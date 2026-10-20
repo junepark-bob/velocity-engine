@@ -45,4 +45,4 @@
 ## 계약
 | ID | 제목 | 요약 | 코드 |
 |---|---|---|---|
-| CTR-CONTRACT-runtime-properties | Velocity 런타임 설정 속성 계약 | RuntimeConstants.java에 선언된 Velocity 런타임 설정 키·기본값 계약. 키 이름 변경 및 기본값 수정 규칙을 정의한다. | velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeConstants.java |
+| CTR-runtime-properties | Velocity 런타임 설정 속성 계약 | RuntimeConstants.java에 선언된 Velocity 런타임 설정 키·기본값 계약. 키 이름 변경 및 기본값 수정 규칙을 정의한다. | velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeConstants.java |
