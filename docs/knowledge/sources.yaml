@@ -1,6 +1,7 @@
 # docs/knowledge/sources.yaml  — 비밀정보는 넣지 않음 (토큰은 .env)
 profile: demo                          # demo | internal  (B16: 프로필을 섞지 않음)
 allowed_hosts:
+  - github.com                         # git 호스트: 배포 kn-mcp가 부분 clone·fetch (B40)
   - api.github.com
   - cwiki.apache.org
   - issues.apache.org
