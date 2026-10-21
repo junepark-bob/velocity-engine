@@ -23,6 +23,14 @@ links:
     page_owner: human
     role: reference
     title: MacroIssues
+  - instance: vendor
+    page_id: ''
+    page_owner: ai
+    role: reference
+    synced_at: '2026-10-21T05:49:05+00:00'
+    synced_hash: sha256:107b0232653a970ef06758c53552252a7ae7b7b604964c17e2beb47551321d8f
+    synced_version: 2
+    title: JavaCC VTL 파서 (COMP-parser)
   jira:
   - instance: apache
     key: VELOCITY-776

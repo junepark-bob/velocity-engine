@@ -22,6 +22,14 @@ links:
     page_owner: human
     role: reference
     title: GenericVelocimacros
+  - instance: vendor
+    page_id: ''
+    page_owner: ai
+    role: reference
+    synced_at: '2026-10-21T05:49:05+00:00'
+    synced_hash: sha256:8afd8da25b7c89f48e1b3fc92f344bbcc29680218af66645d23d7e900f1bf2e4
+    synced_version: 2
+    title: '#foreach 반복 지시어 (FEAT-foreach-directive)'
   jira:
   - instance: apache
     key: VELOCITY-776
