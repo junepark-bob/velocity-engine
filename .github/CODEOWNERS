@@ -1,0 +1,26 @@
+# kn:generated:start source=roles.yaml (kn codeowners로 다시 생성, 직접 고치지 않음)
+/docs/knowledge/architecture/ @junepark-bob
+/docs/knowledge/decisions/ @junepark-bob
+/docs/knowledge/architecture/ARCH-velocity-engine-core.md @junepark-bob
+/docs/knowledge/components/COMP-context-api.md @junepark-bob
+/docs/knowledge/components/COMP-directive-engine.md @junepark-bob
+/docs/knowledge/components/COMP-event-handler.md @junepark-bob
+/docs/knowledge/components/COMP-introspection.md @junepark-bob
+/docs/knowledge/components/COMP-parser.md @junepark-bob
+/docs/knowledge/components/COMP-resource-loader.md @junepark-bob
+/docs/knowledge/components/COMP-runtime-engine.md @junepark-bob
+/docs/knowledge/components/COMP-template-engine.md @junepark-bob
+/docs/knowledge/contracts/CTR-runtime-properties.md @junepark-bob
+/docs/knowledge/decisions/ADR-javacc-parser.md @junepark-bob
+/docs/knowledge/features/FEAT-classpath-resource-loading.md @junepark-bob
+/docs/knowledge/features/FEAT-custom-parser.md @junepark-bob
+/docs/knowledge/features/FEAT-file-resource-loading.md @junepark-bob
+/docs/knowledge/features/FEAT-foreach-directive.md @junepark-bob
+/docs/knowledge/features/FEAT-if-directive.md @junepark-bob
+/docs/knowledge/features/FEAT-macro-definition.md @junepark-bob
+/docs/knowledge/features/FEAT-spring-integration.md @junepark-bob
+/docs/knowledge/features/FEAT-string-interpolation.md @junepark-bob
+/docs/knowledge/features/FEAT-template-rendering.md @junepark-bob
+/docs/knowledge/features/FEAT-variable-resolution.md @junepark-bob
+/docs/knowledge/guides/GUIDE-velocity-context-best-practices.md @junepark-bob
+# kn:generated:end
