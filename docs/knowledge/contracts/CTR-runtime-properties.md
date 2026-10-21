@@ -1,16 +1,41 @@
 ---
-id: CTR-runtime-properties
-type: contract
-title: "Velocity 런타임 설정 속성 계약"
-status: proposed
-summary: "RuntimeConstants.java에 선언된 Velocity 런타임 설정 키·기본값 계약. 키 이름 변경 및 기본값 수정 규칙을 정의한다."
+agreement: ''
 aliases: []
-owners: []
 classification: internal
 code:
-  - velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeConstants.java
+- velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeConstants.java
+components: []
+confluence: []
+git_docs: []
+id: CTR-runtime-properties
+jira: []
+links:
+  jira:
+  - instance: apache
+    key: VELOCITY-542
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-904
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-892
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-909
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-915
+    relation: changed-by
+owners: []
 provenance:
   created_by: kn-new
+  sources_of_knowledge: []
+related: []
+status: proposed
+summary: RuntimeConstants.java에 선언된 Velocity 런타임 설정 키·기본값 계약. 키 이름 변경 및 기본값 수정 규칙을
+  정의한다.
+title: Velocity 런타임 설정 속성 계약
+type: contract
 ---
 
 <!-- append-only: 기존 내용을 고치거나 삭제하지 마세요. 끝에 추가만 허용됩니다. -->

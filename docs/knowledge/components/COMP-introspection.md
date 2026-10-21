@@ -1,16 +1,34 @@
 ---
-id: COMP-introspection
-type: component
-title: "인트로스펙션 (Introspection)"
-status: active
-summary: "리플렉션으로 Java 객체의 프로퍼티·메서드를 조회한다. OGNL 없이 순수 리플렉션 캐시로 $object.property 접근을 처리하며 Spring의 BeanWrapper와 유사한 역할이다."
 aliases: []
-owners: []
 classification: internal
 code:
-  - velocity-engine-core/src/main/java/org/apache/velocity/util/introspection/
+- velocity-engine-core/src/main/java/org/apache/velocity/util/introspection/
+id: COMP-introspection
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730658'
+    page_owner: human
+    role: design
+    title: MultiUberspect
+  - instance: apache
+    page_id: '120730649'
+    page_owner: human
+    role: reference
+    title: JythonUberspect
+  - instance: apache
+    page_id: '120730726'
+    page_owner: human
+    role: reference
+    title: WebappUberspector
+owners: []
 provenance:
   created_by: kn-new
+status: active
+summary: 리플렉션으로 Java 객체의 프로퍼티·메서드를 조회한다. OGNL 없이 순수 리플렉션 캐시로 $object.property 접근을
+  처리하며 Spring의 BeanWrapper와 유사한 역할이다.
+title: 인트로스펙션 (Introspection)
+type: component
 ---
 
 ## 역할

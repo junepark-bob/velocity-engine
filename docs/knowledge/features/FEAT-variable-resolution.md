@@ -1,17 +1,30 @@
 ---
-id: FEAT-variable-resolution
-type: feature
-title: "변수 참조 해석 ($variable)"
-status: active
-summary: "VTL의 $variable, ${variable} 표현식을 컨텍스트에서 조회해 문자열로 변환한다. null이면 리터럴 텍스트로 출력하거나 이벤트 핸들러가 처리한다."
 aliases: []
-owners: []
 classification: internal
 code:
-  - velocity-engine-core/src/main/java/org/apache/velocity/util/introspection/
-  - velocity-engine-core/src/main/java/org/apache/velocity/context/
+- velocity-engine-core/src/main/java/org/apache/velocity/util/introspection/
+- velocity-engine-core/src/main/java/org/apache/velocity/context/
+id: FEAT-variable-resolution
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730613'
+    page_owner: human
+    role: reference
+    title: CheckingForNull
+  - instance: apache
+    page_id: '120730642'
+    page_owner: human
+    role: reference
+    title: IfNullDirective
+owners: []
 provenance:
   created_by: kn-new
+status: active
+summary: VTL의 $variable, ${variable} 표현식을 컨텍스트에서 조회해 문자열로 변환한다. null이면 리터럴 텍스트로 출력하거나
+  이벤트 핸들러가 처리한다.
+title: 변수 참조 해석 ($variable)
+type: feature
 ---
 
 ## 목적

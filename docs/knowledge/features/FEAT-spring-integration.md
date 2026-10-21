@@ -1,16 +1,29 @@
 ---
-id: FEAT-spring-integration
-type: feature
-title: "Spring Framework 통합"
-status: active
-summary: "spring-velocity-support 모듈이 VelocityEngineFactoryBean을 제공해 Spring 빈으로 VelocityEngine을 관리한다. Spring 6/7(Java 17+)과 Spring 5(레거시) 모듈로 분리된다."
 aliases: []
-owners: []
 classification: internal
 code:
-  - spring-velocity-support/src/main/java/org/apache/velocity/spring/
+- spring-velocity-support/src/main/java/org/apache/velocity/spring/
+id: FEAT-spring-integration
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730683'
+    page_owner: human
+    role: guide
+    title: VelocityAndSpringStepByStep
+  - instance: apache
+    page_id: '120730684'
+    page_owner: human
+    role: reference
+    title: VelocityAndSpringTips
+owners: []
 provenance:
   created_by: kn-new
+status: active
+summary: spring-velocity-support 모듈이 VelocityEngineFactoryBean을 제공해 Spring 빈으로 VelocityEngine을
+  관리한다. Spring 6/7(Java 17+)과 Spring 5(레거시) 모듈로 분리된다.
+title: Spring Framework 통합
+type: feature
 ---
 
 ## 목적

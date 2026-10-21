@@ -1,17 +1,30 @@
 ---
-id: COMP-resource-loader
-type: component
-title: "리소스 로더 (Resource Loader)"
-status: active
-summary: "파일시스템·클래스패스·JAR·URL 등 다양한 소스에서 .vm 템플릿 파일을 로드하고 캐시한다. Spring의 ResourceLoader 체인과 유사한 다중 로더 구조를 가진다."
 aliases: []
-owners: []
 classification: internal
 code:
-  - velocity-engine-core/src/main/java/org/apache/velocity/runtime/resource/
-  - velocity-engine-core/src/main/java/org/apache/velocity/runtime/resource/loader/
+- velocity-engine-core/src/main/java/org/apache/velocity/runtime/resource/
+- velocity-engine-core/src/main/java/org/apache/velocity/runtime/resource/loader/
+id: COMP-resource-loader
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730675'
+    page_owner: human
+    role: reference
+    title: StructuredGlobbingResourceLoader
+  - instance: apache
+    page_id: '120730647'
+    page_owner: human
+    role: reference
+    title: JpaResourceLoader
+owners: []
 provenance:
   created_by: kn-new
+status: active
+summary: 파일시스템·클래스패스·JAR·URL 등 다양한 소스에서 .vm 템플릿 파일을 로드하고 캐시한다. Spring의 ResourceLoader
+  체인과 유사한 다중 로더 구조를 가진다.
+title: 리소스 로더 (Resource Loader)
+type: component
 ---
 
 ## 역할

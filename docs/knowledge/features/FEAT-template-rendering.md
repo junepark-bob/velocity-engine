@@ -1,14 +1,43 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/app/VelocityEngine.java
+components: []
+confluence: []
+git_docs: []
 id: FEAT-template-rendering
+jira: []
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730640'
+    page_owner: human
+    role: reference
+    title: HomepageTemplate
+  - instance: apache
+    page_id: '120730689'
+    page_owner: human
+    role: guide
+    title: VelocityDocs
+  jira:
+  - instance: apache
+    key: VELOCITY-776
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-797
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-909
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:3530bc5182342fce5963b7d906c9cdd909eada4a24b9edd593de2ca33740a707
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: VTL 템플릿 파일과 VelocityContext를 병합해 최종 텍스트를 생성하는 핵심 기능. VelocityEngine.merge()가
   진입점이다.

@@ -1,15 +1,50 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/Foreach.java
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/ForeachScope.java
+components: []
+confluence: []
+git_docs: []
 id: FEAT-foreach-directive
+jira: []
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730723'
+    page_owner: human
+    role: reference
+    title: VelocityWhitespaceGobbling
+  - instance: apache
+    page_id: '120730631'
+    page_owner: human
+    role: reference
+    title: GenericVelocimacros
+  jira:
+  - instance: apache
+    key: VELOCITY-776
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-797
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-903
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-916
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-977
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:6905594b4aac63e8202b5ca7c0c4ece534baece3401d4d9fb495072108eb89ce
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: 컬렉션·배열·맵·이터레이터를 순회하는 VTL 반복 지시어. $velocityCount와 $velocityHasNext 내장 변수로
   인덱스·끝 여부를 확인할 수 있다.

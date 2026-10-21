@@ -1,14 +1,46 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/context/**
+components: []
+confluence: []
+git_docs: []
 id: GUIDE-velocity-context-best-practices
+jira: []
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730691'
+    page_owner: human
+    role: reference
+    title: VelocityFAQ
+  - instance: apache
+    page_id: '120730613'
+    page_owner: human
+    role: reference
+    title: CheckingForNull
+  jira:
+  - instance: apache
+    key: VELOCITY-266
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-776
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-797
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-909
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:b8d6b704cb0aabed4439165b81a4a3fd4562f25172886cca97d416b8c073c4f4
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: VelocityContext를 안전하고 효율적으로 사용하기 위한 체인·중첩·스레드 안전성 지침.
 title: VelocityContext 사용 모범 사례

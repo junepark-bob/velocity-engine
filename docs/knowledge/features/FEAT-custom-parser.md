@@ -1,14 +1,32 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/ParserConfiguration.java
+components: []
+confluence: []
+git_docs: []
 id: FEAT-custom-parser
+jira: []
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730672'
+    page_owner: human
+    role: reference
+    title: SilentParseInclude
+  jira:
+  - instance: apache
+    key: VELOCITY-917
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:c6b1a69edfdf381ed56df6741ebce24efe77120d640903a1c457de31124112e0
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: JavaCC 파서의 특수문자(# $ * @)를 변경해 Markdown 등 다른 포맷과 충돌 없이 VTL을 사용할 수 있다. ParserConfiguration으로
   설정하며 2.5+ 버전에서 $ 변경은 deprecated다.

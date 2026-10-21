@@ -1,14 +1,49 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/**
+components: []
+confluence: []
+git_docs: []
 id: ARCH-velocity-engine-core
+jira: []
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730636'
+    page_owner: human
+    role: guide
+    title: HackingVelocity
+  - instance: apache
+    page_id: '120730689'
+    page_owner: human
+    role: guide
+    title: VelocityDocs
+  jira:
+  - instance: apache
+    key: VELOCITY-785
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-789
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-692
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-813
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-814
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:32483c579b5cc1d8114f5c9845707945cf50b8395465d515552167d619b43258
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: Java 기반 범용 템플릿 엔진. VTL(Velocity Template Language)을 파싱해 컨텍스트 데이터와 병합하여 텍스트를
   생성한다. RuntimeInstance가 중심 조율자 역할을 하며 파서 풀·리소스 로더·지시어 엔진이 협력한다.

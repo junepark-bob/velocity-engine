@@ -1,16 +1,51 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/app/VelocityEngine.java
 - velocity-engine-core/src/main/java/org/apache/velocity/app/Velocity.java
 - velocity-engine-core/src/main/java/org/apache/velocity/Template.java
+components: []
+confluence: []
+git_docs: []
 id: COMP-template-engine
+jira: []
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730640'
+    page_owner: human
+    role: reference
+    title: HomepageTemplate
+  - instance: apache
+    page_id: '120730689'
+    page_owner: human
+    role: guide
+    title: VelocityDocs
+  jira:
+  - instance: apache
+    key: VELOCITY-776
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-797
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-909
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-916
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-958
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:26432a7b94102f086c1b508b2e2bb1471f6d08efa175ab92c4460ec8ce1bd098
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: 외부에 노출되는 공개 API 진입점. 템플릿 파싱과 VTL 컨텍스트 병합을 담당하며 Spring MVC의 ViewResolver +
   View 역할에 해당한다.

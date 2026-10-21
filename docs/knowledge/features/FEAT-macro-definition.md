@@ -1,15 +1,55 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/Macro.java
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/RuntimeMacro.java
+components: []
+confluence: []
+git_docs: []
 id: FEAT-macro-definition
+jira: []
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730655'
+    page_owner: human
+    role: design
+    title: MacroEvaluationStrategy
+  - instance: apache
+    page_id: '120730631'
+    page_owner: human
+    role: reference
+    title: GenericVelocimacros
+  - instance: apache
+    page_id: '120730681'
+    page_owner: human
+    role: reference
+    title: VelocimacroLibrary
+  jira:
+  - instance: apache
+    key: VELOCITY-789
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-776
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-797
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-917
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-916
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:731b8a848b29ceb2946fc60a6f6b82b11fc3e56f302cb505963a52042ba966cd
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: 재사용 가능한 VTL 블록을 매크로로 정의한다. 파라미터를 받아 인라인·글로벌 범위로 사용할 수 있으며 Java의 메서드 정의와 유사하다.
 title: '#macro 매크로 정의'

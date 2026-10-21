@@ -1,14 +1,38 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/parser/Parser.jjt
+components: []
+confluence: []
+git_docs: []
 id: ADR-javacc-parser
+jira: []
+links:
+  jira:
+  - instance: apache
+    key: VELOCITY-789
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-706
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-863
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-776
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-797
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:6d578e96fa87577e4b3e6e3b285bfbdbc7a92987c74092dc84642322c0cf84da
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: VTL 문법 파서를 JavaCC로 구현하고, 특수문자 커스터마이징을 위한 빌드 타임 파서 재생성을 공식 지원한다.
 title: 'ADR: JavaCC 기반 파서 채택'

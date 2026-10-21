@@ -1,16 +1,23 @@
 ---
-id: FEAT-string-interpolation
-type: feature
-title: "문자열 보간 (String Interpolation)"
-status: active
-summary: "큰따옴표로 감싼 VTL 문자열 리터럴 안에서 $variable을 평가해 값을 삽입한다. 작은따옴표 문자열은 보간하지 않는다."
 aliases: []
-owners: []
 classification: internal
 code:
-  - velocity-engine-core/src/main/java/org/apache/velocity/runtime/
+- velocity-engine-core/src/main/java/org/apache/velocity/runtime/
+id: FEAT-string-interpolation
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730686'
+    page_owner: human
+    role: reference
+    title: VelocityCommaIfNeeded
+owners: []
 provenance:
   created_by: kn-new
+status: active
+summary: 큰따옴표로 감싼 VTL 문자열 리터럴 안에서 $variable을 평가해 값을 삽입한다. 작은따옴표 문자열은 보간하지 않는다.
+title: 문자열 보간 (String Interpolation)
+type: feature
 ---
 
 ## 목적

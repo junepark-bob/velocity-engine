@@ -1,16 +1,34 @@
 ---
-id: COMP-directive-engine
-type: component
-title: "지시어 엔진 (Directive Engine)"
-status: active
-summary: "#foreach #if #set #macro 등 VTL 지시어를 실행한다. 내장 지시어 외에 커스텀 지시어를 등록할 수 있어 Spring의 HandlerMapping 확장과 유사한 구조다."
 aliases: []
-owners: []
 classification: internal
 code:
-  - velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/
+- velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/
+id: COMP-directive-engine
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730655'
+    page_owner: human
+    role: design
+    title: MacroEvaluationStrategy
+  - instance: apache
+    page_id: '120730631'
+    page_owner: human
+    role: reference
+    title: GenericVelocimacros
+  - instance: apache
+    page_id: '120730681'
+    page_owner: human
+    role: reference
+    title: VelocimacroLibrary
+owners: []
 provenance:
   created_by: kn-new
+status: active
+summary: '#foreach #if #set #macro 등 VTL 지시어를 실행한다. 내장 지시어 외에 커스텀 지시어를 등록할 수 있어 Spring의
+  HandlerMapping 확장과 유사한 구조다.'
+title: 지시어 엔진 (Directive Engine)
+type: component
 ---
 
 ## 역할

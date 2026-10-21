@@ -1,14 +1,49 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/resource/loader/ClasspathResourceLoader.java
+components: []
+confluence: []
+git_docs: []
 id: FEAT-classpath-resource-loading
+jira: []
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730675'
+    page_owner: human
+    role: reference
+    title: StructuredGlobbingResourceLoader
+  - instance: apache
+    page_id: '120730647'
+    page_owner: human
+    role: reference
+    title: JpaResourceLoader
+  jira:
+  - instance: apache
+    key: VELOCITY-789
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-776
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-797
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-909
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-916
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:bf80387551f0acd31bf4a53a0b70852f3fcb47dd76e96c4d83272f765a8a2956
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: ClasspathResourceLoader가 클래스패스(JAR 내부 포함)에서 .vm 파일을 로드한다. 배포 시 JAR 안에 템플릿을
   패키징하는 표준 방식이다.

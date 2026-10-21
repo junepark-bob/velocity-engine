@@ -1,14 +1,49 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/resource/loader/FileResourceLoader.java
+components: []
+confluence: []
+git_docs: []
 id: FEAT-file-resource-loading
+jira: []
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730675'
+    page_owner: human
+    role: reference
+    title: StructuredGlobbingResourceLoader
+  - instance: apache
+    page_id: '120730647'
+    page_owner: human
+    role: reference
+    title: JpaResourceLoader
+  jira:
+  - instance: apache
+    key: VELOCITY-789
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-776
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-797
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-909
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-916
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:e6f3bd7ab8ace036cc460dc03622a340d68cfe16142b6bc07f890820cc800fa0
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: FileResourceLoader가 파일시스템 경로에서 .vm 템플릿을 로드한다. 기본 로더이며 수정 감지 후 자동 재로딩을 지원한다.
 title: 파일시스템 리소스 로딩

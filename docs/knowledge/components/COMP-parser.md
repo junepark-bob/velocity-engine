@@ -1,16 +1,45 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/ParserPool.java
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/ParserPoolImpl.java
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/ParserConfiguration.java
+components: []
+confluence: []
+git_docs: []
 id: COMP-parser
+jira: []
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730672'
+    page_owner: human
+    role: reference
+    title: SilentParseInclude
+  - instance: apache
+    page_id: '120730656'
+    page_owner: human
+    role: reference
+    title: MacroIssues
+  jira:
+  - instance: apache
+    key: VELOCITY-776
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-797
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-917
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:fb3946f59fbd816e58dbf923f2fb4e812b6a3b9b66b7c2c103feed65be676732
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: JavaCC로 생성된 VTL 문법 파서를 풀로 관리한다. 파서는 재진입 불가라서 동시 요청마다 별도 인스턴스를 대여하고 반납하는 풀
   방식을 사용한다.

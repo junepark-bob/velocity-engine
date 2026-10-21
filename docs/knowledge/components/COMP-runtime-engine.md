@@ -1,15 +1,50 @@
 ---
+agreement: ''
 aliases: []
 classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeInstance.java
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeServices.java
+components: []
+confluence: []
+git_docs: []
 id: COMP-runtime-engine
+jira: []
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730657'
+    page_owner: human
+    role: design
+    title: MonostateVelocityEngine
+  - instance: apache
+    page_id: '120730689'
+    page_owner: human
+    role: guide
+    title: VelocityDocs
+  jira:
+  - instance: apache
+    key: VELOCITY-789
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-809
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-776
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-797
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-827
+    relation: changed-by
 owners: []
 provenance:
   code_fingerprint: sha256:a5306147ddd3f0bcaf3790784bd72f5ec479271c0958f6ed200695a200456150
   created_by: kn-new
   fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
 status: active
 summary: 엔진 초기화와 설정을 보관하는 중앙 조율자. Spring의 ApplicationContext에 해당하며 파서 풀·리소스 관리자·지시어
   레지스트리·인트로스펙션을 묶는다.
