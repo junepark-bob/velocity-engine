@@ -1,8 +1,8 @@
 roles:
   architect:
-  - '@team/architects'
+  - '@junepark-bob'
   tech-lead:
-  - '@team/leads'
+  - '@junepark-bob'
 type_owners:
   architecture:
   - architect
