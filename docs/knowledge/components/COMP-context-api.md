@@ -37,9 +37,9 @@ links:
     relation: changed-by
 owners: []
 provenance:
-  code_fingerprint: sha256:05da9c0e211896ffc92446aa7ceca8da917588dd50c503d081ec212649213412
+  code_fingerprint: sha256:4562fef37a5f31421b11559cd7879a0aca623214cbc005f6fb8676b84099831f
   created_by: kn-new
-  fingerprint_commit: 6d21dbf7
+  fingerprint_commit: eec00c57
   sources_of_knowledge: []
 related: []
 status: active
