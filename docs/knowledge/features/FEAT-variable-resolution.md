@@ -2,8 +2,11 @@
 aliases: []
 classification: internal
 code:
-- velocity-engine-core/src/main/java/org/apache/velocity/util/introspection/
-- velocity-engine-core/src/main/java/org/apache/velocity/context/
+- velocity-engine-core/src/main/java/org/apache/velocity/runtime/parser/node/ASTReference.java
+- velocity-engine-core/src/main/java/org/apache/velocity/runtime/parser/node/ASTIdentifier.java
+- velocity-engine-core/src/main/java/org/apache/velocity/context/InternalContextAdapterImpl.java
+- velocity-engine-core/src/main/java/org/apache/velocity/util/introspection/UberspectImpl.java
+- velocity-engine-core/src/main/java/org/apache/velocity/app/event/ReferenceInsertionEventHandler.java
 id: FEAT-variable-resolution
 links:
   confluence:
@@ -19,7 +22,9 @@ links:
     title: IfNullDirective
 owners: []
 provenance:
+  code_fingerprint: sha256:a8892460f27581cc389c87d33c4b0c8d77790b465aca809da39f8af6e4aa6a69
   created_by: kn-new
+  fingerprint_commit: c608fcaa
 status: active
 summary: VTL의 $variable, ${variable} 표현식을 컨텍스트에서 조회해 문자열로 변환한다. null이면 리터럴 텍스트로 출력하거나
   이벤트 핸들러가 처리한다.

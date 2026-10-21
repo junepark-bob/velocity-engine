@@ -2,7 +2,7 @@
 aliases: []
 classification: internal
 code:
-- velocity-engine-core/src/main/java/org/apache/velocity/runtime/
+- velocity-engine-core/src/main/java/org/apache/velocity/runtime/parser/node/ASTStringLiteral.java
 id: FEAT-string-interpolation
 links:
   confluence:
@@ -13,7 +13,9 @@ links:
     title: VelocityCommaIfNeeded
 owners: []
 provenance:
+  code_fingerprint: sha256:6106e5e84990297249cc2d67f60b10e33bdadfc0c9d63f12dbe25b53907f47c7
   created_by: kn-new
+  fingerprint_commit: c608fcaa
 status: active
 summary: 큰따옴표로 감싼 VTL 문자열 리터럴 안에서 $variable을 평가해 값을 삽입한다. 작은따옴표 문자열은 보간하지 않는다.
 title: 문자열 보간 (String Interpolation)

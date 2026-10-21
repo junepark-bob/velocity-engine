@@ -28,9 +28,9 @@
 | FEAT-if-directive | #if 조건 지시어 | VTL 조건 분기 지시어. #if/#elseif/#else/#end로 구성되며 null·false·빈 컬렉션을 모두 false로 평가하는 Vel | velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/Block.java |
 | FEAT-macro-definition | #macro 매크로 정의 | 재사용 가능한 VTL 블록을 매크로로 정의한다. 파라미터를 받아 인라인·글로벌 범위로 사용할 수 있으며 Java의 메서드 정의와 유사하다. | velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/Macro.java, velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/RuntimeMacro.java |
 | FEAT-spring-integration | Spring Framework 통합 | spring-velocity-support 모듈이 VelocityEngineFactoryBean을 제공해 Spring 빈으로 VelocityEn | spring-velocity-support/src/main/java/org/apache/velocity/spring/ |
-| FEAT-string-interpolation | 문자열 보간 (String Interpolation) | 큰따옴표로 감싼 VTL 문자열 리터럴 안에서 $variable을 평가해 값을 삽입한다. 작은따옴표 문자열은 보간하지 않는다. | velocity-engine-core/src/main/java/org/apache/velocity/runtime/ |
+| FEAT-string-interpolation | 문자열 보간 (String Interpolation) | 큰따옴표로 감싼 VTL 문자열 리터럴 안에서 $variable을 평가해 값을 삽입한다. 작은따옴표 문자열은 보간하지 않는다. | velocity-engine-core/src/main/java/org/apache/velocity/runtime/parser/node/ASTStringLiteral.java |
 | FEAT-template-rendering | VTL 템플릿 렌더링 | VTL 템플릿 파일과 VelocityContext를 병합해 최종 텍스트를 생성하는 핵심 기능. VelocityEngine.merge()가 진입점 | velocity-engine-core/src/main/java/org/apache/velocity/app/VelocityEngine.java |
-| FEAT-variable-resolution | 변수 참조 해석 ($variable) | VTL의 $variable, ${variable} 표현식을 컨텍스트에서 조회해 문자열로 변환한다. null이면 리터럴 텍스트로 출력하거나 이벤트 | velocity-engine-core/src/main/java/org/apache/velocity/util/introspection/, velocity-engine-core/src/main/java/org/apache/velocity/context/ |
+| FEAT-variable-resolution | 변수 참조 해석 ($variable) | VTL의 $variable, ${variable} 표현식을 컨텍스트에서 조회해 문자열로 변환한다. null이면 리터럴 텍스트로 출력하거나 이벤트 | velocity-engine-core/src/main/java/org/apache/velocity/runtime/parser/node/ASTReference.java, velocity-engine-core/src/main/java/org/apache/velocity/runtime/parser/node/ASTIdentifier.java |
 
 ## 결정 (ADR)
 | ID | 제목 | 요약 | 코드 |
