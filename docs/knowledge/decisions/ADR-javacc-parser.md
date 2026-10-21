@@ -5,10 +5,7 @@ classification: internal
 code:
 - velocity-engine-core/src/main/parser/Parser.jjt
 components: []
-confluence: []
-git_docs: []
 id: ADR-javacc-parser
-jira: []
 links:
   jira:
   - instance: apache
@@ -26,7 +23,8 @@ links:
   - instance: apache
     key: VELOCITY-797
     relation: changed-by
-owners: []
+owners:
+- role:architect
 provenance:
   code_fingerprint: sha256:6d578e96fa87577e4b3e6e3b285bfbdbc7a92987c74092dc84642322c0cf84da
   created_by: kn-new

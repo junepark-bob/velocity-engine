@@ -5,10 +5,7 @@ classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/resource/loader/FileResourceLoader.java
 components: []
-confluence: []
-git_docs: []
 id: FEAT-file-resource-loading
-jira: []
 links:
   confluence:
   - instance: apache
@@ -37,7 +34,8 @@ links:
   - instance: apache
     key: VELOCITY-916
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:e6f3bd7ab8ace036cc460dc03622a340d68cfe16142b6bc07f890820cc800fa0
   created_by: kn-new

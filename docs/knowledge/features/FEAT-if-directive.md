@@ -5,10 +5,7 @@ classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/Block.java
 components: []
-confluence: []
-git_docs: []
 id: FEAT-if-directive
-jira: []
 links:
   confluence:
   - instance: apache
@@ -39,7 +36,8 @@ links:
   - instance: apache
     key: VELOCITY-797
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:e7d8a688c47b804262cde1c16b9e76b07875057f6a32cc0989f642046b9b7de8
   created_by: kn-new

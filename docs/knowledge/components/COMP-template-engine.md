@@ -7,10 +7,7 @@ code:
 - velocity-engine-core/src/main/java/org/apache/velocity/app/Velocity.java
 - velocity-engine-core/src/main/java/org/apache/velocity/Template.java
 components: []
-confluence: []
-git_docs: []
 id: COMP-template-engine
-jira: []
 links:
   confluence:
   - instance: apache
@@ -39,7 +36,8 @@ links:
   - instance: apache
     key: VELOCITY-958
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:26432a7b94102f086c1b508b2e2bb1471f6d08efa175ab92c4460ec8ce1bd098
   created_by: kn-new

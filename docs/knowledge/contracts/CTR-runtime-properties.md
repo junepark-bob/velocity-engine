@@ -5,10 +5,7 @@ classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeConstants.java
 components: []
-confluence: []
-git_docs: []
 id: CTR-runtime-properties
-jira: []
 links:
   jira:
   - instance: apache
@@ -26,7 +23,8 @@ links:
   - instance: apache
     key: VELOCITY-915
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   created_by: kn-new
   sources_of_knowledge: []

@@ -6,10 +6,7 @@ code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/Macro.java
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/RuntimeMacro.java
 components: []
-confluence: []
-git_docs: []
 id: FEAT-macro-definition
-jira: []
 links:
   confluence:
   - instance: apache
@@ -43,7 +40,8 @@ links:
   - instance: apache
     key: VELOCITY-916
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:731b8a848b29ceb2946fc60a6f6b82b11fc3e56f302cb505963a52042ba966cd
   created_by: kn-new

@@ -21,7 +21,8 @@ links:
     page_owner: human
     role: reference
     title: WebappUberspector
-owners: []
+owners:
+- role:tech-lead
 provenance:
   created_by: kn-new
 status: active

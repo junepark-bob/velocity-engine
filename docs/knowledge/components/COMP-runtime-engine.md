@@ -6,10 +6,7 @@ code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeInstance.java
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeServices.java
 components: []
-confluence: []
-git_docs: []
 id: COMP-runtime-engine
-jira: []
 links:
   confluence:
   - instance: apache
@@ -38,7 +35,8 @@ links:
   - instance: apache
     key: VELOCITY-827
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:a5306147ddd3f0bcaf3790784bd72f5ec479271c0958f6ed200695a200456150
   created_by: kn-new

@@ -5,10 +5,7 @@ classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/ParserConfiguration.java
 components: []
-confluence: []
-git_docs: []
 id: FEAT-custom-parser
-jira: []
 links:
   confluence:
   - instance: apache
@@ -20,7 +17,8 @@ links:
   - instance: apache
     key: VELOCITY-917
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:c6b1a69edfdf381ed56df6741ebce24efe77120d640903a1c457de31124112e0
   created_by: kn-new

@@ -6,10 +6,7 @@ code:
 - velocity-engine-core/src/main/java/org/apache/velocity/context/
 - velocity-engine-core/src/main/java/org/apache/velocity/VelocityContext.java
 components: []
-confluence: []
-git_docs: []
 id: COMP-context-api
-jira: []
 links:
   confluence:
   - instance: apache
@@ -35,7 +32,8 @@ links:
   - instance: apache
     key: VELOCITY-797
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:4562fef37a5f31421b11559cd7879a0aca623214cbc005f6fb8676b84099831f
   created_by: kn-new

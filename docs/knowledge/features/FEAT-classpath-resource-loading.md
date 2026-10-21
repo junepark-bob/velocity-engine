@@ -5,10 +5,7 @@ classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/resource/loader/ClasspathResourceLoader.java
 components: []
-confluence: []
-git_docs: []
 id: FEAT-classpath-resource-loading
-jira: []
 links:
   confluence:
   - instance: apache
@@ -37,7 +34,8 @@ links:
   - instance: apache
     key: VELOCITY-916
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:bf80387551f0acd31bf4a53a0b70852f3fcb47dd76e96c4d83272f765a8a2956
   created_by: kn-new

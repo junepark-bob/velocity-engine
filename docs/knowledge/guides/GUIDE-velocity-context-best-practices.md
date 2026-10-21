@@ -5,10 +5,7 @@ classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/context/**
 components: []
-confluence: []
-git_docs: []
 id: GUIDE-velocity-context-best-practices
-jira: []
 links:
   confluence:
   - instance: apache
@@ -34,7 +31,8 @@ links:
   - instance: apache
     key: VELOCITY-909
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:b8d6b704cb0aabed4439165b81a4a3fd4562f25172886cca97d416b8c073c4f4
   created_by: kn-new

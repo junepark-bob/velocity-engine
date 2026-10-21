@@ -17,7 +17,8 @@ links:
     page_owner: human
     role: reference
     title: JpaResourceLoader
-owners: []
+owners:
+- role:tech-lead
 provenance:
   created_by: kn-new
 status: active

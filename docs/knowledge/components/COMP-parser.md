@@ -7,10 +7,7 @@ code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/ParserPoolImpl.java
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/ParserConfiguration.java
 components: []
-confluence: []
-git_docs: []
 id: COMP-parser
-jira: []
 links:
   confluence:
   - instance: apache
@@ -41,7 +38,8 @@ links:
   - instance: apache
     key: VELOCITY-917
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:fb3946f59fbd816e58dbf923f2fb4e812b6a3b9b66b7c2c103feed65be676732
   created_by: kn-new

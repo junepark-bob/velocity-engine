@@ -5,10 +5,7 @@ classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/**
 components: []
-confluence: []
-git_docs: []
 id: ARCH-velocity-engine-core
-jira: []
 links:
   confluence:
   - instance: apache
@@ -37,7 +34,8 @@ links:
   - instance: apache
     key: VELOCITY-814
     relation: changed-by
-owners: []
+owners:
+- role:architect
 provenance:
   code_fingerprint: sha256:32483c579b5cc1d8114f5c9845707945cf50b8395465d515552167d619b43258
   created_by: kn-new

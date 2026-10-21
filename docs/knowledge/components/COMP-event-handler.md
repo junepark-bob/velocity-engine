@@ -5,7 +5,8 @@ title: "이벤트 핸들러 (Event Handler)"
 status: active
 summary: "렌더링 생명주기에 훅을 삽입한다. 참조 삽입·잘못된 참조·메서드 예외 등 이벤트를 가로채 로깅·변환·예외 처리를 커스터마이징할 수 있다."
 aliases: []
-owners: []
+owners:
+- role:tech-lead
 classification: internal
 code:
   - velocity-engine-core/src/main/java/org/apache/velocity/app/event/

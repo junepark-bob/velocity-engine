@@ -5,10 +5,7 @@ classification: internal
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/app/VelocityEngine.java
 components: []
-confluence: []
-git_docs: []
 id: FEAT-template-rendering
-jira: []
 links:
   confluence:
   - instance: apache
@@ -31,7 +28,8 @@ links:
   - instance: apache
     key: VELOCITY-909
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:3530bc5182342fce5963b7d906c9cdd909eada4a24b9edd593de2ca33740a707
   created_by: kn-new

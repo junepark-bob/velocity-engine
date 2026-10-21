@@ -11,7 +11,8 @@ links:
     page_owner: human
     role: reference
     title: VelocityCommaIfNeeded
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:6106e5e84990297249cc2d67f60b10e33bdadfc0c9d63f12dbe25b53907f47c7
   created_by: kn-new

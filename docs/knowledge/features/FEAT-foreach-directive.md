@@ -6,10 +6,7 @@ code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/Foreach.java
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/ForeachScope.java
 components: []
-confluence: []
-git_docs: []
 id: FEAT-foreach-directive
-jira: []
 links:
   confluence:
   - instance: apache
@@ -46,7 +43,8 @@ links:
   - instance: apache
     key: VELOCITY-977
     relation: changed-by
-owners: []
+owners:
+- role:tech-lead
 provenance:
   code_fingerprint: sha256:6905594b4aac63e8202b5ca7c0c4ece534baece3401d4d9fb495072108eb89ce
   created_by: kn-new
