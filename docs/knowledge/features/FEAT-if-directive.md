@@ -86,10 +86,6 @@ Velocity truthy 규칙 (Java와 다름):
   유효 범위
 #end
 ```
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
@@ -100,4 +96,20 @@ Velocity truthy 규칙 (Java와 다름):
 - [VELOCITY-692](https://issues.apache.org/jira/browse/VELOCITY-692) — changed-by
 - [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2019-03-11: [engine] javadoc and indentation fixes (cff1b533)
+- 2016-12-13: [engine] optimization: use an unsynchronized string writer whenever possible (3451a6c2)
+- 2016-07-22: Applied Jarkko's memory saving patch that drops Tokens while parsing. Review and specific tests still in progress, but already functionnal. One change from the patch: String interning straregy has been made a boolean configuration property. (1a4e14ef)
+- 2016-07-17 [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776): [engine] keep macros in defining templates (applied reviewed patch from VELOCITY-797, fixes VELOCITY-797 and VELOCITY-776); plus some code cleaning that was in the patch (92d42e6f)
+- 2016-06-22: fix some parametrized logger messages for slf4j '{}' placeholders, and add parametrization when possible (f09bc795)
+- 2015-08-31: [engine] switch to slf4j logging facade (32273e3c)
+- 2010-12-29 [VELOCITY-692](https://issues.apache.org/jira/browse/VELOCITY-692): Add better duck-typing support, make #if() false for 'empty' objects (VELOCITY-692), and refactor comparison nodes to remove gross amounts of duplicate code (38bd741b)
+- 2010-12-01 [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789): Removed ORO, Avalon. Commons Lang is only a test dependency. First pass for removing Commons Collections. (0849e923)
+- 2010-07-01 VELOCITYSB-4: Renamed directories of modules. (f5570750)
+- 연결된 JIRA: [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789), [VELOCITY-692](https://issues.apache.org/jira/browse/VELOCITY-692), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797)
 <!-- kn:generated:end -->

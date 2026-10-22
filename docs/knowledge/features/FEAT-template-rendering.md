@@ -69,10 +69,6 @@ StringWriter sw = new StringWriter();
 t.merge(ctx, sw);
 // hello.vm: Hello $name!  →  "Hello World!"
 ```
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
@@ -81,4 +77,20 @@ t.merge(ctx, sw);
 - [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
 - [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-10-20: feat: VelocityEngine.getTemplate() 인코딩 명시화 + 지식 지도 보강 (F2/F3) (0b3e1d82)
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2019-03-15: [engine] Remove all instances of LogChute in the javadocs (bdfa47d4)
+- 2019-03-11: [engine] javadoc and indentation fixes (cff1b533)
+- 2019-03-06: [engine] configuration key names refactoring proposal (f31d3d3f)
+- 2017-01-28: [engine] full code review (foreach loops and some other problems detected by code analysis tools) (23e6d0fa)
+- 2016-12-09: [engine] review global configuration getters/setters - do not expose ExtProperties in Velocity and VelocityEngine (b7851cea)
+- 2016-12-09: [engine] Remove shading of commons-lang3. Remove all references to ExtendedProperties, and dependency towards commons-collections. (1378c73f)
+- 2016-07-26: New datatypes conversion framework: (fa1c5e18)
+- 2016-07-17 [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776): [engine] keep macros in defining templates (applied reviewed patch from VELOCITY-797, fixes VELOCITY-797 and VELOCITY-776); plus some code cleaning that was in the patch (92d42e6f)
+- 연결된 JIRA: [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909)
 <!-- kn:generated:end -->

@@ -70,10 +70,6 @@ type: component
 - `RuntimeInstance` → `ResourceManager`: 템플릿 로딩·캐싱 위임
 - `RuntimeInstance` → `DirectiveManager`: `#` 지시어 등록·실행 위임
 - `RuntimeInstance` → `IntrospectionManager`: Java 객체 접근 메서드 조회 위임
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
@@ -84,4 +80,20 @@ type: component
 - [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
 - [VELOCITY-827](https://issues.apache.org/jira/browse/VELOCITY-827) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-09-15: Deprecate parser.class property, as well as DOLLAR char customization (ae5215e8)
+- 2026-09-14: Deprecate createNewParser() method ; silent some internal deprecation warnings (0e443a8d)
+- 2026-09-13: Deprecate mutable integer ranges (runtime.immutable_ranges = false) (614ef32d)
+- 2026-09-13: Deprecate velocimacro library old default name ; warn about deprecation warnings (f2a2d7af)
+- 2026-09-13: Deprecate velocimacro.enable_bc_mode without replacement (9e53f0f1)
+- 2026-09-12: Deprecate lenient math (only strict match mode supported in next version) - a bit painful because 2.5 will have to ship a deprecated default setting, but rather corner case (8eab1e8e)
+- 2026-09-10: Un-deprecate informal navigation $foo.bar, introduce ${foo ?: bar} as alternative to ${foo | bar} ; deprecation warnings now shown by default (6c6e84da)
+- 2026-06-13 [VELOCITY-995](https://issues.apache.org/jira/browse/VELOCITY-995): VTL syntax deprecation warnings (still off by default) (0b6fa31b)
+- 2024-10-14 [VELOCITY-944](https://issues.apache.org/jira/browse/VELOCITY-944): Fix VELOCITY-944 (603630c3)
+- 2024-09-01: Clarify template reuse in RuntimeInstance javadoc (22dc54d4)
+- 연결된 JIRA: [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789), [VELOCITY-809](https://issues.apache.org/jira/browse/VELOCITY-809), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-827](https://issues.apache.org/jira/browse/VELOCITY-827)
 <!-- kn:generated:end -->

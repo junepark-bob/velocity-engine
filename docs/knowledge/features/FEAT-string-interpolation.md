@@ -53,12 +53,23 @@ $literal
 ## 중괄호로 경계 명시
 #set($tag = "<${elementName}>")
 ```
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
 - [VelocityCommaIfNeeded](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730686) — reference
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-09-11: Corner case: a final backslash in a double quoted string is deprecated (c9707967)
+- 2024-08-23: Normalize some tab-indented source files (08211a61)
+- 2024-02-16 [VELOCITY-977](https://issues.apache.org/jira/browse/VELOCITY-977): Upgrade Java Compiler Compiler to Version 7.0.13 (86cfcf41)
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2019-12-28 [VELOCITY-904](https://issues.apache.org/jira/browse/VELOCITY-904): [engine] Fix VELOCITY-904 again (ead820a5)
+- 2019-09-08 [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916): Add a second effect for the debugging flag runtime.log.track_location: display VTL stacktrace on errors (5782c4cf)
+- 2019-06-17 [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917): [engine][VELOCITY-917] RuntimeServices shouldn't directly expose configured parser chars (b7f22362)
+- 2019-05-31 [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917): [engine][VELOCITY-917] Preliminary work for VTL chars config: parametrize code using target chars (10cee0a4)
+- 2019-03-11: [engine] javadoc and indentation fixes (cff1b533)
+- 2017-02-20: [engine] testcase and literals behavior for emptycheck=false; reference should cache emptycheck for speed (765ea383)
 <!-- kn:generated:end -->

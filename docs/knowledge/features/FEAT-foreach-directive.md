@@ -88,10 +88,6 @@ type: feature
   $item#if($velocityHasNext), #end
 #end
 ```
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
@@ -103,4 +99,20 @@ type: feature
 - [VELOCITY-903](https://issues.apache.org/jira/browse/VELOCITY-903) — changed-by
 - [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916) — changed-by
 - [VELOCITY-977](https://issues.apache.org/jira/browse/VELOCITY-977) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2024-02-16 [VELOCITY-977](https://issues.apache.org/jira/browse/VELOCITY-977): Upgrade Java Compiler Compiler to Version 7.0.13 (86cfcf41)
+- 2022-06-18: Fix a funny typo (304a5397)
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2019-09-08 [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916): Add a second effect for the debugging flag runtime.log.track_location: display VTL stacktrace on errors (5782c4cf)
+- 2019-03-11: [engine] javadoc and indentation fixes (cff1b533)
+- 2018-10-15 [VELOCITY-903](https://issues.apache.org/jira/browse/VELOCITY-903): #foreach #else #end ready (4d50cb53)
+- 2017-01-26: [engine] remove unused imports (166bf708)
+- 2017-01-26: [engine] fix trailing whitespaces (2880a3c0)
+- 2017-01-26: [engine] remove antrun trick, always build parser, and put generated sources in target/ (f73c6d84)
+- 2016-11-11: [engine] still logging reeng (25b1fe9c)
+- 연결된 JIRA: [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-903](https://issues.apache.org/jira/browse/VELOCITY-903), [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916), [VELOCITY-977](https://issues.apache.org/jira/browse/VELOCITY-977)
 <!-- kn:generated:end -->

@@ -58,14 +58,25 @@ VTL 파서가 `#` 로 시작하는 노드를 만나면 지시어 엔진에 위�
 - `ParserPool` → `Directive`: 파싱 단계에서 지시어 노드 생성
 - `Foreach` → `ContextAPI`: 루프 변수(`$velocityCount`, `$velocityHasNext`) 주입
 - `Macro` → `ResourceManager`: `#parse`로 파일 인클루드 시 로딩 위임
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
 - [MacroEvaluationStrategy](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730655) — design
 - [GenericVelocimacros](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730631) — reference
 - [VelocimacroLibrary](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730681) — reference
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-09-15: Resource loaders now enforce templates paths to stay in their configured root (16a69933)
+- 2026-09-15: Fix: #evaluate() max depth should honor directive.parse.max_depth (ae068a34)
+- 2026-09-14: Deprecate createNewParser() method ; silent some internal deprecation warnings (0e443a8d)
+- 2024-02-16 [VELOCITY-977](https://issues.apache.org/jira/browse/VELOCITY-977): Upgrade Java Compiler Compiler to Version 7.0.13 (86cfcf41)
+- 2023-03-26: Fix specific recursion bug (non-block call inside block call) (a6434836)
+- 2022-07-25 [VELOCITY-959](https://issues.apache.org/jira/browse/VELOCITY-959): Easier #include and #parse directives subclassing - fixes VELOCITY-959 (28c97b43)
+- 2022-06-18: Fix a funny typo (304a5397)
+- 2022-04-18 [VELOCITY-953](https://issues.apache.org/jira/browse/VELOCITY-953): Fixes VELOCITY-953 where VelocimacroProxy polutes context stack due to wrong handling of #break or exceptions (84e49aa2)
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2021-02-25: Rebased what I could from PR #2 'Add generics parameters and remove unnecesary casts' (74644012)
 <!-- kn:generated:end -->

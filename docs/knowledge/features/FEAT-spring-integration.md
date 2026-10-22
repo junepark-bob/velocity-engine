@@ -65,13 +65,21 @@ public VelocityEngine velocityEngine() throws VelocityException, IOException {
   </property>
 </bean>
 ```
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
 - [VelocityAndSpringStepByStep](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730683) — guide
 - [VelocityAndSpringTips](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730684) — reference
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2025-11-01: Avoid using deprecated properties syntax in tests and extension loaders (da719218)
+- 2024-09-07 [VELOCITY-943](https://issues.apache.org/jira/browse/VELOCITY-943): Proposed conditional patch to address VELOCITY-943 (#51) (977b3881)
+- 2024-08-23: Normalize some tab-indented source files (08211a61)
+- 2023-08-13 [VELOCITY-974](https://issues.apache.org/jira/browse/VELOCITY-974): Use non-deprecated config property for resource loaders in VelocityEngineFactory (d5c52e90)
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2021-02-25: Replace reference to obsolete spring classes with links to javadoc (c0e3cc71)
+- 2020-10-27: Initial commit for spring-velocity-support (35e92297)
 <!-- kn:generated:end -->

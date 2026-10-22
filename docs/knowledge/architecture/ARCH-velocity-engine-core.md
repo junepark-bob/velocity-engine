@@ -84,10 +84,6 @@ VelocityEngine (진입점)
 - **Spring Framework**: `spring-velocity-support` 모듈이 `VelocityEngineFactoryBean`을 제공. Spring 6/7용과 Spring 5용(레거시)으로 분리.
 - **JSR-223 스크립팅**: `velocity-engine-scripting` 모듈로 `ScriptEngine` API 지원.
 - **Apache Commons Collections**: `ExtendedProperties` 설정 파싱.
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
@@ -98,4 +94,20 @@ VelocityEngine (진입점)
 - [VELOCITY-692](https://issues.apache.org/jira/browse/VELOCITY-692) — changed-by
 - [VELOCITY-813](https://issues.apache.org/jira/browse/VELOCITY-813) — changed-by
 - [VELOCITY-814](https://issues.apache.org/jira/browse/VELOCITY-814) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-10-20: feat: VelocityEngine.getTemplate() 인코딩 명시화 + 지식 지도 보강 (F2/F3) (0b3e1d82)
+- 2026-09-25 [VELOCITY-1000](https://issues.apache.org/jira/browse/VELOCITY-1000): InvalidReferenceEventHandler.invalidSetMethod() now sends the whole invalid LHS reference, not jusst its root (88140ef0)
+- 2026-09-25 [VELOCITY-999](https://issues.apache.org/jira/browse/VELOCITY-999): SecureUberspector now honours the configured type conversion handler (cf5384dc)
+- 2026-09-25: Reduce the scope of the deprecated flags/features: restore ${exp|altValue}, remove ?: alternative syntax, un-deprecate word operators (0c461087)
+- 2026-09-15: Deprecate parser.class property, as well as DOLLAR char customization (ae5215e8)
+- 2026-09-13: SecureUberspector checks Class receivers before static-method lookup (a6f7fc88)
+- 2026-09-15: Resource loaders now enforce templates paths to stay in their configured root (16a69933)
+- 2026-09-15: Fix: #evaluate() max depth should honor directive.parse.max_depth (ae068a34)
+- 2026-09-14: Deprecate createNewParser() method ; silent some internal deprecation warnings (0e443a8d)
+- 2026-09-13: Deprecate mutable integer ranges (runtime.immutable_ranges = false) (614ef32d)
+- 연결된 JIRA: [VELOCITY-785](https://issues.apache.org/jira/browse/VELOCITY-785), [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789), [VELOCITY-692](https://issues.apache.org/jira/browse/VELOCITY-692), [VELOCITY-813](https://issues.apache.org/jira/browse/VELOCITY-813), [VELOCITY-814](https://issues.apache.org/jira/browse/VELOCITY-814)
 <!-- kn:generated:end -->

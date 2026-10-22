@@ -77,10 +77,6 @@ src/main/resources/
   templates/
     report.vm    →  클래스패스: templates/report.vm
 ```
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
@@ -91,4 +87,20 @@ src/main/resources/
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
 - [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909) — changed-by
 - [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-09-15: Resource loaders now enforce templates paths to stay in their configured root (16a69933)
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2019-09-08 [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916): Add a second effect for the debugging flag runtime.log.track_location: display VTL stacktrace on errors (5782c4cf)
+- 2019-03-10 [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909): [engine][VELOCITY-909] Propagate propnames changes thorough javadoc; some more related code fixes (fec80129)
+- 2017-02-20: [engine] several coding style fixes (Michael remarks) (95aeb9d5)
+- 2017-01-26: [engine] remove useless isXXXEnabled() tests (858859ca)
+- 2016-12-09: [engine] since we drop support for the old ResourceLoader API, there's no need of using the suffixed name ResourceLoader2 (8215bbec)
+- 2016-07-17 [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776): [engine] keep macros in defining templates (applied reviewed patch from VELOCITY-797, fixes VELOCITY-797 and VELOCITY-776); plus some code cleaning that was in the patch (92d42e6f)
+- 2016-07-17: [engine] remove dependency to commons-collections-3 (except from deprecated classes and methods), use our own ExtProperties class (a9d1b7e8)
+- 2016-07-16: better backward compatibility handling for resource loader API change (5917e17b)
+- 연결된 JIRA: [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909), [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916)
 <!-- kn:generated:end -->
