@@ -20,7 +20,7 @@ links:
     role: reference
     title: GenericVelocimacros
   - instance: vendor
-    page_id: ''
+    page_id: '1179649'
     page_owner: ai
     role: reference
     synced_at: '2026-10-21T05:49:05+00:00'
@@ -97,7 +97,7 @@ type: feature
 <!-- kn:generated:start source=links -->
 - [VelocityWhitespaceGobbling](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730723) — reference
 - [GenericVelocimacros](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730631) — reference
-- #foreach 반복 지시어 (FEAT-foreach-directive) (주소 없음) — reference · kn 생성 페이지
+- [#foreach 반복 지시어 (FEAT-foreach-directive)](https://bobphw.atlassian.net/wiki/pages/viewpage.action?pageId=1179649) — reference · kn 생성 페이지
 - [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
 - [VELOCITY-903](https://issues.apache.org/jira/browse/VELOCITY-903) — changed-by

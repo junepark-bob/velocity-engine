@@ -21,7 +21,7 @@ links:
     role: reference
     title: MacroIssues
   - instance: vendor
-    page_id: ''
+    page_id: '1048577'
     page_owner: ai
     role: reference
     synced_at: '2026-10-21T05:49:05+00:00'
@@ -79,7 +79,7 @@ VTL 문법을 파싱해 AST(추상 구문 트리)를 생성한다. JavaCC로 생
 <!-- kn:generated:start source=links -->
 - [SilentParseInclude](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730672) — reference
 - [MacroIssues](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730656) — reference
-- JavaCC VTL 파서 (COMP-parser) (주소 없음) — reference · kn 생성 페이지
+- [JavaCC VTL 파서 (COMP-parser)](https://bobphw.atlassian.net/wiki/pages/viewpage.action?pageId=1048577) — reference · kn 생성 페이지
 - [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
 - [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917) — changed-by
