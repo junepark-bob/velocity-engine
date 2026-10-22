@@ -70,3 +70,14 @@ type: component
 
 <!-- kn:generated:start source=git-log -->
 <!-- kn:generated:end -->
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [VelocityScriptingApi](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730703) — reference
+- [JspVersusVelocity](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730648) — reference
+- [VELOCITY-712](https://issues.apache.org/jira/browse/VELOCITY-712) — changed-by
+- [VELOCITY-266](https://issues.apache.org/jira/browse/VELOCITY-266) — changed-by
+- [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
+- [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
+<!-- kn:generated:end -->

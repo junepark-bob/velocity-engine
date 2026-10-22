@@ -89,3 +89,15 @@ Velocity truthy 규칙 (Java와 다름):
 
 <!-- kn:generated:start source=git-log -->
 <!-- kn:generated:end -->
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [IfNotNullDirective](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730641) — reference
+- [IfNullDirective](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730642) — reference
+- [CheckingForNull](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730613) — reference
+- [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789) — changed-by
+- [VELOCITY-692](https://issues.apache.org/jira/browse/VELOCITY-692) — changed-by
+- [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
+- [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
+<!-- kn:generated:end -->

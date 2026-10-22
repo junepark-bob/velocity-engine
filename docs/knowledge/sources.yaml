@@ -18,11 +18,13 @@ confluence:
   instances:
     - name: apache                     # 고객 역할 — 원본 오픈소스 Confluence (B30)
       base_url: https://cwiki.apache.org/confluence
+      page_url: "{base_url}/pages/viewpage.action?pageId={page_id}"   # 주소 규칙 (K76)
       api: datacenter
       access: read-only
       spaces: [{key: VELOCITY}]
     - name: vendor                     # 개발사 역할 — 내 Atlassian Cloud
       base_url: https://bobphw.atlassian.net/wiki
+      page_url: "{base_url}/pages/viewpage.action?pageId={page_id}"   # Cloud도 이 형식이 열리고 없는 ID는 404 (2026-10-22 확인)
       api: cloud
       access: read-write
       spaces: [{key: MFS, managed_parent_page_id: "426157"}]   # 426157 = 루트 페이지(AFC), 이 페이지가 속한 스페이스가 MFS (K65)
@@ -32,11 +34,13 @@ jira:
   instances:
     - name: apache
       base_url: https://issues.apache.org/jira
+      issue_url: "{base_url}/browse/{key}"
       api: datacenter
       access: read-only
       project_keys: [VELOCITY]
     - name: vendor                     # [Day 8] 채우기
       base_url: https://bobphw.atlassian.net
+      issue_url: "{base_url}/browse/{key}"
       api: cloud
       access: csv-import-only
       project_key: KND

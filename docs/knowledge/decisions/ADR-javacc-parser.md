@@ -61,3 +61,13 @@ JavaCC(Java Compiler Compiler)를 파서 생성기로 채택한다. `velocity-en
 
 - **ANTLR**: 더 강력하나 Velocity 초기(2001년) 당시 JavaCC가 표준적이었고 이미 구현 완료.
 - **수동 파서**: 유지보수 부담이 커 기각.
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789) — changed-by
+- [VELOCITY-706](https://issues.apache.org/jira/browse/VELOCITY-706) — changed-by
+- [VELOCITY-863](https://issues.apache.org/jira/browse/VELOCITY-863) — changed-by
+- [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
+- [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
+<!-- kn:generated:end -->

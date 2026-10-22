@@ -85,3 +85,14 @@ Hello $name!
 - 렌더링 결과에서 `$name`이 그대로 출력되면 컨텍스트 키 불일치 — `ctx.put("name", ...)` 확인.
 - `NullPointerException` 발생 시 `$!{variable}` (조용한 참조) 사용 검토.
 - 멀티스레드 환경: `VelocityContext`는 스레드 안전하지 않으므로 요청마다 새 인스턴스 생성.
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [VelocityFAQ](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730691) — reference
+- [CheckingForNull](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730613) — reference
+- [VELOCITY-266](https://issues.apache.org/jira/browse/VELOCITY-266) — changed-by
+- [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
+- [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
+- [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909) — changed-by
+<!-- kn:generated:end -->

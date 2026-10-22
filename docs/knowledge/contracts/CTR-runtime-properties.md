@@ -67,3 +67,13 @@ type: contract
 ## 변경 이력
 
 - 2026-10-20: 초기 계약 작성. `INPUT_ENCODING`, `MAX_NUMBER_LOOPS`, `RESOURCE_LOADERS` 등 8개 핵심 키 정의.
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [VELOCITY-542](https://issues.apache.org/jira/browse/VELOCITY-542) — changed-by
+- [VELOCITY-904](https://issues.apache.org/jira/browse/VELOCITY-904) — changed-by
+- [VELOCITY-892](https://issues.apache.org/jira/browse/VELOCITY-892) — changed-by
+- [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909) — changed-by
+- [VELOCITY-915](https://issues.apache.org/jira/browse/VELOCITY-915) — changed-by
+<!-- kn:generated:end -->

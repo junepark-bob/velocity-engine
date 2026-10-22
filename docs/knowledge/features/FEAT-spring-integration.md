@@ -1,8 +1,10 @@
 ---
+agreement: ''
 aliases: []
 classification: public
 code:
 - spring-velocity-support/src/main/java/org/apache/velocity/spring/
+components: []
 id: FEAT-spring-integration
 links:
   confluence:
@@ -20,6 +22,8 @@ owners:
 - role:tech-lead
 provenance:
   created_by: kn-new
+  sources_of_knowledge: []
+related: []
 status: active
 summary: spring-velocity-support 모듈이 VelocityEngineFactoryBean을 제공해 Spring 빈으로 VelocityEngine을
   관리한다. Spring 6/7(Java 17+)과 Spring 5(레거시) 모듈로 분리된다.
@@ -63,4 +67,11 @@ public VelocityEngine velocityEngine() throws VelocityException, IOException {
 ```
 
 <!-- kn:generated:start source=git-log -->
+<!-- kn:generated:end -->
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [VelocityAndSpringStepByStep](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730683) — guide
+- [VelocityAndSpringTips](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730684) — reference
 <!-- kn:generated:end -->

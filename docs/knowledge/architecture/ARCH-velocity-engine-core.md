@@ -87,3 +87,15 @@ VelocityEngine (진입점)
 
 <!-- kn:generated:start source=git-log -->
 <!-- kn:generated:end -->
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [HackingVelocity](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730636) — guide
+- [VelocityDocs](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730689) — guide
+- [VELOCITY-785](https://issues.apache.org/jira/browse/VELOCITY-785) — changed-by
+- [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789) — changed-by
+- [VELOCITY-692](https://issues.apache.org/jira/browse/VELOCITY-692) — changed-by
+- [VELOCITY-813](https://issues.apache.org/jira/browse/VELOCITY-813) — changed-by
+- [VELOCITY-814](https://issues.apache.org/jira/browse/VELOCITY-814) — changed-by
+<!-- kn:generated:end -->

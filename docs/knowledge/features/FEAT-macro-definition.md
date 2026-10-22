@@ -85,3 +85,16 @@ type: feature
 
 <!-- kn:generated:start source=git-log -->
 <!-- kn:generated:end -->
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [MacroEvaluationStrategy](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730655) — design
+- [GenericVelocimacros](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730631) — reference
+- [VelocimacroLibrary](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730681) — reference
+- [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789) — changed-by
+- [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
+- [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
+- [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917) — changed-by
+- [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916) — changed-by
+<!-- kn:generated:end -->
