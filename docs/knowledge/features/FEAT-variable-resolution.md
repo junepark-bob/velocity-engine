@@ -74,14 +74,9 @@ $order.customer.address.city
 ## 변경 이력
 
 <!-- kn:generated:start source=git+jira -->
-- 2026-09-25: Reduce the scope of the deprecated flags/features: restore ${exp|altValue}, remove ?: alternative syntax, un-deprecate word operators (0c461087)
+- 2026-09-25: Reduce the scope of the deprecated flags/features: restore ${exp|altValue}, remo… (0c461087)
 - 2026-09-14: Deprecate createNewParser() method ; silent some internal deprecation warnings (0e443a8d)
 - 2026-09-10: Un-deprecate ${}} (d1914e91)
-- 2026-09-10: Un-deprecate informal navigation $foo.bar, introduce ${foo ?: bar} as alternative to ${foo | bar} ; deprecation warnings now shown by default (6c6e84da)
+- 2026-09-10: Un-deprecate informal navigation $foo.bar, introduce ${foo ?: bar} as alternativ… (6c6e84da)
 - 2026-06-13 [VELOCITY-995](https://issues.apache.org/jira/browse/VELOCITY-995): VTL syntax deprecation warnings (still off by default) (0b6fa31b)
-- 2025-11-01: Allow an extra dollar after '{' as version 1.7 did: ${$foo}, $!{$foo} (15a969fd)
-- 2024-02-16 [VELOCITY-977](https://issues.apache.org/jira/browse/VELOCITY-977): Upgrade Java Compiler Compiler to Version 7.0.13 (86cfcf41)
-- 2021-03-03: Fix references alternate values implementation, with some more test cases (dd9b7242)
-- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
-- 2021-02-25: Rebased what I could from PR #2 'Add generics parameters and remove unnecesary casts' (74644012)
 <!-- kn:generated:end -->

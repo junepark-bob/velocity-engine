@@ -1,0 +1,52 @@
+# 질의 라우팅 규칙 (K87). 질문·작업의 의도로 읽을 곳을 정한다.
+# kn init-config --print-entry-block 과 kn context session-start 가 이 파일에서 문맥을 만든다.
+# 경로를 추가·변경할 때는 경로 ID별 측정 결과를 근거로 남긴다.
+version: 1
+routes:
+- id: R1
+  name: 코드 사실
+  when: 코드가 무엇이고 어떻게 동작하는지 묻는 질문
+  examples:
+  - 인코딩 기본값은?
+  steps:
+  - 지도 없이 grep
+  effect: 지도가 끼어들지 않음 → 추가 비용 0
+- id: R2
+  name: 이유·이력·결정
+  when: 왜, 언제, 누가 결정했는지 묻는 질문 (코드 식별자가 있어도)
+  examples:
+  - 기본값은 왜 무제한이야?
+  steps:
+  - kn search <키워드>
+  - 항목
+  - 결정·델타·설계 md
+  effect: 코드에 없는 답을 찾음(grep으로 불가), 프롬프트에만 있던 이유까지
+- id: R3
+  name: 문서·이슈·담당 위치
+  when: 관련 문서, 이슈, 담당자가 어디 있는지 묻는 질문
+  examples:
+  - 이 기능 스펙 문서와 담당은?
+  steps:
+  - kn search <키워드>
+  - 연결(links, owners)
+  effect: Confluence·JIRA를 뒤지지 않음, 링크는 코드가 생성(지어낸 링크 없음)
+- id: R4
+  name: 구조·온보딩
+  when: 구조·개념을 묻는 질문, 키워드 없음
+  examples:
+  - 어디부터 봐야 해?
+  steps:
+  - index.md
+  - 맞는 갈래의 _index.md
+  - 항목
+  effect: 코드 전체를 훑지 않고 목차 몇 개로
+- id: R5
+  name: 코드 변경
+  when: 코드를 바꾸는 작업
+  examples:
+  - 반복 제한을 추가해 줘
+  steps:
+  - kn paths <파일>
+  - 그 파일의 항목·주의·계약
+  - 작업 후 /kn:delta
+  effect: 탐색 단축(토큰), 오래된 지식 경고, 바꾼 이유 보존

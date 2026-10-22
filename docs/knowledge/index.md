@@ -12,4 +12,4 @@
 | 계약 | 1 | [contracts/_index.md](contracts/_index.md) |
 | 가이드 | 1 | [guides/_index.md](guides/_index.md) |
 
-주의가 필요한 항목 0개 — `kn search --warnings`
+주의 항목은 `kn search --warnings`

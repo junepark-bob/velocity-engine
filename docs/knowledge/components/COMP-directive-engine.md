@@ -74,9 +74,4 @@ VTL 파서가 `#` 로 시작하는 노드를 만나면 지시어 엔진에 위�
 - 2026-09-14: Deprecate createNewParser() method ; silent some internal deprecation warnings (0e443a8d)
 - 2024-02-16 [VELOCITY-977](https://issues.apache.org/jira/browse/VELOCITY-977): Upgrade Java Compiler Compiler to Version 7.0.13 (86cfcf41)
 - 2023-03-26: Fix specific recursion bug (non-block call inside block call) (a6434836)
-- 2022-07-25 [VELOCITY-959](https://issues.apache.org/jira/browse/VELOCITY-959): Easier #include and #parse directives subclassing - fixes VELOCITY-959 (28c97b43)
-- 2022-06-18: Fix a funny typo (304a5397)
-- 2022-04-18 [VELOCITY-953](https://issues.apache.org/jira/browse/VELOCITY-953): Fixes VELOCITY-953 where VelocimacroProxy polutes context stack due to wrong handling of #break or exceptions (84e49aa2)
-- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
-- 2021-02-25: Rebased what I could from PR #2 'Add generics parameters and remove unnecesary casts' (74644012)
 <!-- kn:generated:end -->

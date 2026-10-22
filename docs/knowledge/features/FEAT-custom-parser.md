@@ -72,6 +72,6 @@ ve.init(p);
 ## 변경 이력
 
 <!-- kn:generated:start source=git+jira -->
-- 2019-06-17 [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917): [engine][VELOCITY-917] RuntimeServices shouldn't directly expose configured parser chars (b7f22362)
+- 2019-06-17 [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917): [engine][VELOCITY-917] RuntimeServices shouldn't directly expose configured pars… (b7f22362)
 - 연결된 JIRA: [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917)
 <!-- kn:generated:end -->

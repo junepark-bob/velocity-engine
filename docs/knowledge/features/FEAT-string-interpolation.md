@@ -67,9 +67,4 @@ $literal
 - 2024-02-16 [VELOCITY-977](https://issues.apache.org/jira/browse/VELOCITY-977): Upgrade Java Compiler Compiler to Version 7.0.13 (86cfcf41)
 - 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
 - 2019-12-28 [VELOCITY-904](https://issues.apache.org/jira/browse/VELOCITY-904): [engine] Fix VELOCITY-904 again (ead820a5)
-- 2019-09-08 [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916): Add a second effect for the debugging flag runtime.log.track_location: display VTL stacktrace on errors (5782c4cf)
-- 2019-06-17 [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917): [engine][VELOCITY-917] RuntimeServices shouldn't directly expose configured parser chars (b7f22362)
-- 2019-05-31 [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917): [engine][VELOCITY-917] Preliminary work for VTL chars config: parametrize code using target chars (10cee0a4)
-- 2019-03-11: [engine] javadoc and indentation fixes (cff1b533)
-- 2017-02-20: [engine] testcase and literals behavior for emptycheck=false; reference should cache emptycheck for speed (765ea383)
 <!-- kn:generated:end -->

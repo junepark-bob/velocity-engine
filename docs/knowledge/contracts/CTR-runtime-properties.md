@@ -71,12 +71,7 @@ type: contract
 - 2026-09-15: Fix: #evaluate() max depth should honor directive.parse.max_depth (ae068a34)
 - 2026-09-13: Deprecate mutable integer ranges (runtime.immutable_ranges = false) (614ef32d)
 - 2026-09-13: Deprecate velocimacro.enable_bc_mode without replacement (9e53f0f1)
-- 2026-09-10: Un-deprecate informal navigation $foo.bar, introduce ${foo ?: bar} as alternative to ${foo | bar} ; deprecation warnings now shown by default (6c6e84da)
-- 2026-06-13 [VELOCITY-995](https://issues.apache.org/jira/browse/VELOCITY-995): VTL syntax deprecation warnings (still off by default) (0b6fa31b)
-- 2026-05-03: Add introspector.restrict.methods config, and block by default VelocityEngine init() and reset() methods (d9446698)
-- 2024-08-25: Add a statements pool to DatasourceResourceLoader to fix thread safety (3479d85b)
-- 2024-08-23: Add a new compatibility flag for integer ranges immutability (00a2089c)
-- 2024-02-03 [VELOCITY-951](https://issues.apache.org/jira/browse/VELOCITY-951): DataSourceResourceLoader: property datasource_url wrong (660c1365)
+- 2026-09-10: Un-deprecate informal navigation $foo.bar, introduce ${foo ?: bar} as alternativ… (6c6e84da)
 - 연결된 JIRA: [VELOCITY-542](https://issues.apache.org/jira/browse/VELOCITY-542), [VELOCITY-904](https://issues.apache.org/jira/browse/VELOCITY-904), [VELOCITY-892](https://issues.apache.org/jira/browse/VELOCITY-892), [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909), [VELOCITY-915](https://issues.apache.org/jira/browse/VELOCITY-915)
 <!-- kn:generated:end -->
 

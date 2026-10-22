@@ -75,15 +75,10 @@ JavaCC(Java Compiler Compiler)를 파서 생성기로 채택한다. `velocity-en
 ## 변경 이력
 
 <!-- kn:generated:start source=git+jira -->
-- 2026-09-25: Reduce the scope of the deprecated flags/features: restore ${exp|altValue}, remove ?: alternative syntax, un-deprecate word operators (0c461087)
-- 2026-09-10: Un-deprecate informal navigation $foo.bar, introduce ${foo ?: bar} as alternative to ${foo | bar} ; deprecation warnings now shown by default (6c6e84da)
+- 2026-09-25: Reduce the scope of the deprecated flags/features: restore ${exp|altValue}, remo… (0c461087)
+- 2026-09-10: Un-deprecate informal navigation $foo.bar, introduce ${foo ?: bar} as alternativ… (6c6e84da)
 - 2026-06-13 [VELOCITY-995](https://issues.apache.org/jira/browse/VELOCITY-995): VTL syntax deprecation warnings (still off by default) (0b6fa31b)
 - 2026-04-24: Fix javacc warnings (3c544916)
 - 2025-11-04: Add a few tests for block macros formal references (06a4a263)
-- 2025-11-01: Allow an extra dollar after '{' as version 1.7 did: ${$foo}, $!{$foo} (15a969fd)
-- 2024-08-24: Unclosed #[[ ]]# statement should give a parsing error (b422860c)
-- 2024-08-23: Fix a parsing regression (aead6947)
-- 2024-02-16 [VELOCITY-977](https://issues.apache.org/jira/browse/VELOCITY-977): Upgrade Java Compiler Compiler to Version 7.0.13 (86cfcf41)
-- 2021-02-27 [VELOCITY-927](https://issues.apache.org/jira/browse/VELOCITY-927): [engine] Fix VELOCITY-927 (aade2612)
 - 연결된 JIRA: [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789), [VELOCITY-706](https://issues.apache.org/jira/browse/VELOCITY-706), [VELOCITY-863](https://issues.apache.org/jira/browse/VELOCITY-863), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797)
 <!-- kn:generated:end -->

@@ -87,10 +87,5 @@ t.merge(ctx, sw);
 - 2019-03-15: [engine] Remove all instances of LogChute in the javadocs (bdfa47d4)
 - 2019-03-11: [engine] javadoc and indentation fixes (cff1b533)
 - 2019-03-06: [engine] configuration key names refactoring proposal (f31d3d3f)
-- 2017-01-28: [engine] full code review (foreach loops and some other problems detected by code analysis tools) (23e6d0fa)
-- 2016-12-09: [engine] review global configuration getters/setters - do not expose ExtProperties in Velocity and VelocityEngine (b7851cea)
-- 2016-12-09: [engine] Remove shading of commons-lang3. Remove all references to ExtendedProperties, and dependency towards commons-collections. (1378c73f)
-- 2016-07-26: New datatypes conversion framework: (fa1c5e18)
-- 2016-07-17 [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776): [engine] keep macros in defining templates (applied reviewed patch from VELOCITY-797, fixes VELOCITY-797 and VELOCITY-776); plus some code cleaning that was in the patch (92d42e6f)
 - 연결된 JIRA: [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909)
 <!-- kn:generated:end -->

@@ -87,12 +87,7 @@ VTL 문법을 파싱해 AST(추상 구문 트리)를 생성한다. JavaCC로 생
 - 2026-09-14: Deprecate createNewParser() method ; silent some internal deprecation warnings (0e443a8d)
 - 2024-07-30: Fix log messages (8945a787)
 - 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
-- 2019-06-17 [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917): [engine][VELOCITY-917] RuntimeServices shouldn't directly expose configured parser chars (b7f22362)
+- 2019-06-17 [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917): [engine][VELOCITY-917] RuntimeServices shouldn't directly expose configured pars… (b7f22362)
 - 2017-01-26: [engine] remove useless isXXXEnabled() tests (858859ca)
-- 2017-01-26: [engine] fix trailing whitespaces (2880a3c0)
-- 2017-01-26: [engine] fix slf4j params non-usage (87fda0e0)
-- 2016-11-11: [engine] still logging reeng (25b1fe9c)
-- 2016-07-17 [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776): [engine] keep macros in defining templates (applied reviewed patch from VELOCITY-797, fixes VELOCITY-797 and VELOCITY-776); plus some code cleaning that was in the patch (92d42e6f)
-- 2015-03-01: Use the native endline instead of the hardcoded Windows one (31c75031)
 - 연결된 JIRA: [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917)
 <!-- kn:generated:end -->
