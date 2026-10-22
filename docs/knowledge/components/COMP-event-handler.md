@@ -7,7 +7,7 @@ summary: "렌더링 생명주기에 훅을 삽입한다. 참조 삽입·잘못�
 aliases: []
 owners:
 - role:tech-lead
-classification: internal
+classification: public
 code:
   - velocity-engine-core/src/main/java/org/apache/velocity/app/event/
 provenance:

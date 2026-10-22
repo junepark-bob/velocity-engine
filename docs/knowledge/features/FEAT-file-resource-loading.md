@@ -1,7 +1,7 @@
 ---
 agreement: ''
 aliases: []
-classification: internal
+classification: public
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/resource/loader/FileResourceLoader.java
 components: []
