@@ -1,7 +1,7 @@
 ---
 agreement: ''
 aliases: []
-classification: internal
+classification: public
 code:
 - velocity-engine-core/src/main/parser/Parser.jjt
 components: []

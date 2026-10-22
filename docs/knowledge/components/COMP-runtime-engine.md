@@ -1,7 +1,7 @@
 ---
 agreement: ''
 aliases: []
-classification: internal
+classification: public
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeInstance.java
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeServices.java

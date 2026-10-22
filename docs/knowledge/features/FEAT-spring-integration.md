@@ -1,6 +1,6 @@
 ---
 aliases: []
-classification: internal
+classification: public
 code:
 - spring-velocity-support/src/main/java/org/apache/velocity/spring/
 id: FEAT-spring-integration

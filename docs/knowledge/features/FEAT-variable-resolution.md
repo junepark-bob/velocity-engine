@@ -1,6 +1,6 @@
 ---
 aliases: []
-classification: internal
+classification: public
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/parser/node/ASTReference.java
 - velocity-engine-core/src/main/java/org/apache/velocity/runtime/parser/node/ASTIdentifier.java
