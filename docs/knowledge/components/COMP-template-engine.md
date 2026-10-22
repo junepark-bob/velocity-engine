@@ -72,3 +72,15 @@ type: component
 
 <!-- kn:generated:start source=git-log -->
 <!-- kn:generated:end -->
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [HomepageTemplate](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730640) — reference
+- [VelocityDocs](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730689) — guide
+- [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
+- [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
+- [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909) — changed-by
+- [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916) — changed-by
+- [VELOCITY-958](https://issues.apache.org/jira/browse/VELOCITY-958) — changed-by
+<!-- kn:generated:end -->

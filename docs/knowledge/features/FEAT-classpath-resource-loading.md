@@ -80,3 +80,15 @@ src/main/resources/
 
 <!-- kn:generated:start source=git-log -->
 <!-- kn:generated:end -->
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [StructuredGlobbingResourceLoader](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730675) — reference
+- [JpaResourceLoader](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730647) — reference
+- [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789) — changed-by
+- [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
+- [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
+- [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909) — changed-by
+- [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916) — changed-by
+<!-- kn:generated:end -->

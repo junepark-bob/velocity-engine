@@ -65,3 +65,10 @@ ve.init(p);
 
 <!-- kn:generated:start source=git-log -->
 <!-- kn:generated:end -->
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [SilentParseInclude](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730672) — reference
+- [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917) — changed-by
+<!-- kn:generated:end -->

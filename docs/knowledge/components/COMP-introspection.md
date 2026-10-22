@@ -1,8 +1,10 @@
 ---
+agreement: ''
 aliases: []
 classification: public
 code:
 - velocity-engine-core/src/main/java/org/apache/velocity/util/introspection/
+components: []
 id: COMP-introspection
 links:
   confluence:
@@ -25,6 +27,8 @@ owners:
 - role:tech-lead
 provenance:
   created_by: kn-new
+  sources_of_knowledge: []
+related: []
 status: active
 summary: 리플렉션으로 Java 객체의 프로퍼티·메서드를 조회한다. OGNL 없이 순수 리플렉션 캐시로 $object.property 접근을
   처리하며 Spring의 BeanWrapper와 유사한 역할이다.
@@ -54,4 +58,12 @@ VTL 표현식 `$obj.name`을 평가할 때 `obj`의 `getName()` 또는 `name` �
 - `ContextAPI` → `Uberspector`: 컨텍스트 값에서 프로퍼티 접근
 
 <!-- kn:generated:start source=git-log -->
+<!-- kn:generated:end -->
+
+## 상세 문서
+
+<!-- kn:generated:start source=links -->
+- [MultiUberspect](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730658) — design
+- [JythonUberspect](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730649) — reference
+- [WebappUberspector](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730726) — reference
 <!-- kn:generated:end -->
