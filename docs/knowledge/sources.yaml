@@ -1,0 +1,54 @@
+# docs/knowledge/sources.yaml  — 비밀정보는 넣지 않음 (토큰은 .env)
+profile: demo                          # demo | internal  (B16: 프로필을 섞지 않음)
+allowed_hosts:
+  - github.com                         # git 호스트: 배포 kn-mcp가 부분 clone·fetch (B40)
+  - api.github.com
+  - cwiki.apache.org
+  - issues.apache.org
+  - bobphw.atlassian.net
+
+git:
+  platform: github
+  repo: junepark-bob/velocity-engine   # 공개 fork (B29: 사내 정보 금지)
+  default_branch: master
+  issue_key_patterns: ["VELOCITY-\\d+"]
+  scope: [velocity-engine-core/]      # 진단 범위(경로 접두어). lint CODE_TOO_BROAD의 분모 (K65)
+
+confluence:
+  instances:
+    - name: apache                     # 고객 역할 — 원본 오픈소스 Confluence (B30)
+      base_url: https://cwiki.apache.org/confluence
+      api: datacenter
+      access: read-only
+      spaces: [{key: VELOCITY}]
+    - name: vendor                     # 개발사 역할 — 내 Atlassian Cloud
+      base_url: https://bobphw.atlassian.net/wiki
+      api: cloud
+      access: read-write
+      spaces: [{key: MFS, managed_parent_page_id: "426157"}]   # 426157 = 루트 페이지(AFC), 이 페이지가 속한 스페이스가 MFS (K65)
+  publish_to: vendor
+
+jira:
+  instances:
+    - name: apache
+      base_url: https://issues.apache.org/jira
+      api: datacenter
+      access: read-only
+      project_keys: [VELOCITY]
+    - name: vendor                     # [Day 8] 채우기
+      base_url: https://bobphw.atlassian.net
+      api: cloud
+      access: csv-import-only
+      project_key: KND
+      issue_types: {task: Task, story: Story, bug: Bug}
+      csv_profile: cloud
+  export_target: vendor
+  export_scopes:
+    initial-backlog: {types: [feature, component], issue_type: story, max: 30}
+
+policies:
+  approval_policy: defer
+  restricted_mode: on-demand
+  restricted_policy: title
+
+credentials: env                       # KN_APACHE_TOKEN (없음, 공개), KN_VENDOR_TOKEN·_EMAIL, GITHUB_TOKEN

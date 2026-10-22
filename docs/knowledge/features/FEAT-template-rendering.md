@@ -1,0 +1,74 @@
+---
+agreement: ''
+aliases: []
+classification: internal
+code:
+- velocity-engine-core/src/main/java/org/apache/velocity/app/VelocityEngine.java
+components: []
+id: FEAT-template-rendering
+links:
+  confluence:
+  - instance: apache
+    page_id: '120730640'
+    page_owner: human
+    role: reference
+    title: HomepageTemplate
+  - instance: apache
+    page_id: '120730689'
+    page_owner: human
+    role: guide
+    title: VelocityDocs
+  jira:
+  - instance: apache
+    key: VELOCITY-776
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-797
+    relation: changed-by
+  - instance: apache
+    key: VELOCITY-909
+    relation: changed-by
+owners:
+- role:tech-lead
+provenance:
+  code_fingerprint: sha256:3530bc5182342fce5963b7d906c9cdd909eada4a24b9edd593de2ca33740a707
+  created_by: kn-new
+  fingerprint_commit: 6d21dbf7
+  sources_of_knowledge: []
+related: []
+status: active
+summary: VTL 템플릿 파일과 VelocityContext를 병합해 최종 텍스트를 생성하는 핵심 기능. VelocityEngine.merge()가
+  진입점이다.
+title: VTL 템플릿 렌더링
+type: feature
+---
+
+## 목적
+
+`.vm` 템플릿 파일과 Java 객체 컨텍스트를 받아 HTML·SQL·코드·이메일 본문 등 텍스트를 생성한다. Spring MVC의 `View.render(model, response)` 에 해당한다.
+
+## 동작 방식
+
+1. `VelocityEngine.getTemplate("name.vm")` → `ResourceManager`가 로더 체인에서 파일 로드
+2. 첫 요청에 JavaCC 파서가 VTL을 AST로 변환, `ResourceCache`에 저장
+3. `Template.merge(context, writer)` 호출 → AST 노드를 순회하며 `Writer`에 출력
+4. `$variable` 노드 → `Uberspector`로 컨텍스트에서 값 꺼내기
+5. `#` 지시어 노드 → `DirectiveEngine` 위임
+
+## 사용 예시
+
+```java
+VelocityEngine ve = new VelocityEngine();
+ve.init();
+
+VelocityContext ctx = new VelocityContext();
+ctx.put("name", "World");
+
+Template t = ve.getTemplate("hello.vm");
+StringWriter sw = new StringWriter();
+t.merge(ctx, sw);
+// hello.vm: Hello $name!  →  "Hello World!"
+```
+
+<!-- kn:generated:start source=git-log -->
+<!-- kn:generated:end -->

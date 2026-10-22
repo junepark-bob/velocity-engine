@@ -1,0 +1,11 @@
+roles:
+  architect:
+  - '@junepark-bob'
+  tech-lead:
+  - '@junepark-bob'
+type_owners:
+  architecture:
+  - architect
+  decisions:
+  - architect
+item_owners: {}

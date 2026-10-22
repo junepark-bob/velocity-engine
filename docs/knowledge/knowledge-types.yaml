@@ -1,0 +1,56 @@
+types:
+  architecture:
+    folder: architecture
+    prefix: ARCH
+    enabled: true
+    mutability: mutable
+  component:
+    folder: components
+    prefix: COMP
+    enabled: true
+    mutability: mutable
+  feature:
+    folder: features
+    prefix: FEAT
+    enabled: true
+    mutability: mutable
+  domain-rule:
+    folder: domain-rules
+    prefix: RULE
+    enabled: true
+    mutability: mutable
+  decision:
+    folder: decisions
+    prefix: ADR
+    enabled: true
+    mutability: append-only
+  guide:
+    folder: guides
+    prefix: GUIDE
+    enabled: true
+    mutability: mutable
+  contract:
+    folder: contracts
+    prefix: CTR
+    enabled: true
+    mutability: append-only
+  glossary:
+    folder: glossary
+    prefix: GLOS
+    enabled: false
+    mutability: mutable
+  spec:
+    folder: specs
+    prefix: SPEC
+    enabled: false
+    mutability: mutable
+  operation:
+    folder: operations
+    prefix: OPS
+    enabled: false
+    mutability: mutable
+  agreement:
+    folder: agreements
+    prefix: AGR
+    enabled: false
+    mutability: append-only
