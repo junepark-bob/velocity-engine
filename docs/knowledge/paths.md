@@ -7,6 +7,7 @@
 |---|---|
 
 | spring-velocity-support/src/main/java/org/apache/velocity/spring | FEAT-spring-integration |
+| velocity-custom-parser-example/pom.xml | FEAT-custom-parser |
 | velocity-engine-core/src/main/java/org/apache/velocity | ARCH-velocity-engine-core |
 | velocity-engine-core/src/main/java/org/apache/velocity/Template.java | COMP-template-engine |
 | velocity-engine-core/src/main/java/org/apache/velocity/VelocityContext.java | COMP-context-api |

@@ -26,7 +26,9 @@ links:
 owners:
 - role:tech-lead
 provenance:
+  code_fingerprint: sha256:fde564ec4679577eb0982b8c380e664acb67d1970c57617283de54010f0d36a6
   created_by: kn-new
+  fingerprint_commit: 85721ef9
   sources_of_knowledge: []
 related: []
 status: proposed
@@ -62,7 +64,8 @@ type: contract
 
 - 키 이름 변경 시 최소 1 마이너 버전 간 deprecated 키 병용 지원 후 제거.
 - 기본값 변경은 마이너 버전 업에서만 허용; 패치는 금지.
-- 새 키 추가 시 `RuntimeConstants.java` 상수 선언 + 이 파일 `## 변경 이력` 업데이트.
+- 새 키 추가 시 `RuntimeConstants.java`에 상수를 선언하고 기본값은 `velocity.properties`에 적는다.
+- 이 항목의 `## 변경 이력`은 `kn generate`가 채우는 생성 구역이므로 직접 고치지 않는다. 계약 항목은 추가만 허용되므로 기존 줄을 바꾸지 않고, 규칙이 바뀌면 끝에 줄을 더하거나 새 항목을 만든다.
 
 ## 변경 이력
 

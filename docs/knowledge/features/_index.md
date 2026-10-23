@@ -4,7 +4,7 @@
 | ID | 제목 | 요약 |
 |---|---|---|
 | FEAT-classpath-resource-loading | 클래스패스 리소스 로딩 | ClasspathResourceLoader가 클래스패스(JAR 내부 포함)에서 .vm 파일을 로드한다. |
-| FEAT-custom-parser | 커스텀 파서 설정 | JavaCC 파서의 특수문자(# $ * @)를 변경해 Markdown 등 다른 포맷과 충돌 없이 VTL을 사… |
+| FEAT-custom-parser | 커스텀 파서 설정 | JavaCC 파서의 특수문자(# $ * @)를 빌드 시점에 바꿔 커스텀 파서를 생성하면 Markdown 등 … |
 | FEAT-file-resource-loading | 파일시스템 리소스 로딩 | FileResourceLoader가 파일시스템 경로에서 .vm 템플릿을 로드한다. |
 | FEAT-foreach-directive | #foreach 반복 지시어 | 컬렉션·배열·맵·이터레이터를 순회하는 VTL 반복 지시어. |
 | FEAT-if-directive | #if 조건 지시어 | VTL 조건 분기 지시어. |
