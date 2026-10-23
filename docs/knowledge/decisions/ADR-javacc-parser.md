@@ -82,3 +82,13 @@ JavaCC(Java Compiler Compiler)를 파서 생성기로 채택한다. 문법은 `v
 - 2025-11-04: Add a few tests for block macros formal references (06a4a263)
 - 연결된 JIRA: [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789), [VELOCITY-706](https://issues.apache.org/jira/browse/VELOCITY-706), [VELOCITY-863](https://issues.apache.org/jira/browse/VELOCITY-863), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797)
 <!-- kn:generated:end -->
+
+## 정정 기록
+
+- 2026-10-23 · 문법 파일 경로: `src/main/javacc/Parser.jj`를 `velocity-engine-core/src/main/parser/Parser.jjt`(JJTree 문법)로 고쳤다.
+- 2026-10-23 · 특수문자 변경 방식: "`ParserConfiguration`으로 교체"를 "빌드 시점 속성 `parser.char.*`로 커스텀 파서를 생성"으로 고쳤다(`ParserConfiguration`은 설정된 문자를 담는 클래스).
+- 2026-10-23 · `parser.class`(런타임 지정)와 `$` 변경이 2.5부터 deprecated임을 명시하고, 결과 절의 `.jj` 표기를 `.jjt`로 고쳤다.
+- 이유: 진단(`/kn:init`)이 만든 설명의 사실 오류.
+- 근거: `velocity-engine-core/src/main/parser/Parser.jjt`(`:221-224`), `velocity-engine-core/pom.xml:40-43, 108-133`, `RuntimeConstants.java:441-452`, `velocity-custom-parser-example/pom.xml:37-45, 56-62`.
+- 관련: 고객 이슈 #6(FEAT-macro-definition 설정 키 오류)과 같은 묶음의 지도 오류 정정, 델타 `D-20261023-001`.
+- 결정 자체(JavaCC 채택, 이유, 대안)는 바뀌지 않았다.
