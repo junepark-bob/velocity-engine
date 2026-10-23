@@ -45,7 +45,7 @@ owners:
 provenance:
   code_fingerprint: sha256:731b8a848b29ceb2946fc60a6f6b82b11fc3e56f302cb505963a52042ba966cd
   created_by: kn-new
-  fingerprint_commit: 6d21dbf7
+  fingerprint_commit: 85721ef9
   sources_of_knowledge: []
 related: []
 status: active
@@ -62,8 +62,8 @@ type: feature
 
 1. `#macro(이름 $파라미터...)...#end` 로 정의
 2. `#이름($arg)` 형태로 호출 (일반 지시어처럼)
-3. 정의 위치: 같은 템플릿 내(인라인), 별도 `.vm` 파일(글로벌, `velocimacros.vm`)
-4. `velocimacros.library` 설정으로 글로벌 매크로 라이브러리 파일 지정
+3. 정의 위치: 같은 템플릿 내(인라인), 별도 라이브러리 템플릿 파일(글로벌, 기본 파일 `velocimacros.vtl` — `RuntimeConstants.VM_LIBRARY_DEFAULT`, `RuntimeConstants.java:331`)
+4. `velocimacro.library.path` 설정으로 글로벌 매크로 라이브러리 파일 지정(`RuntimeConstants.VM_LIBRARY`, `RuntimeConstants.java:328`)
 
 ## 사용 예시
 

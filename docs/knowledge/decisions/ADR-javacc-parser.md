@@ -28,7 +28,7 @@ owners:
 provenance:
   code_fingerprint: sha256:6d578e96fa87577e4b3e6e3b285bfbdbc7a92987c74092dc84642322c0cf84da
   created_by: kn-new
-  fingerprint_commit: 6d21dbf7
+  fingerprint_commit: 85721ef9
   sources_of_knowledge: []
 related: []
 status: active
@@ -49,11 +49,11 @@ Velocity는 `$variable`, `#directive`, `@reference` 등의 특수문자를 VTL �
 
 ## 결정
 
-JavaCC(Java Compiler Compiler)를 파서 생성기로 채택한다. `velocity-engine-core/src/main/javacc/Parser.jj` 파일을 빌드 타임에 컴파일해 Java 파서 소스를 생성한다. `ParserConfiguration`을 통해 `*`, `@`, `#` 특수문자를 교체할 수 있게 한다. 단, `$` 변경은 2.5에서 deprecated, 다음 메이저에서 제거 예정.
+JavaCC(Java Compiler Compiler)를 파서 생성기로 채택한다. 문법은 `velocity-engine-core/src/main/parser/Parser.jjt`(JJTree 문법) 한 파일이고, 빌드 타임에 `javacc-maven-plugin`의 `jjtree-javacc` 목표로 Java 파서 소스를 생성한다(`velocity-engine-core/pom.xml`). `*`, `@`, `#`, `$` 특수문자는 런타임 설정이 아니라 **빌드 시점 속성**(`parser.char.asterisk`·`parser.char.at`·`parser.char.hash`·`parser.char.dollar`, `velocity-engine-core/pom.xml:40-43`, `Parser.jjt:221-224`)으로 정해 커스텀 파서를 따로 생성해 바꾼다(`velocity-custom-parser-example`). `ParserConfiguration`은 설정된 치환 문자를 담아 두는 클래스이며 엔진이 파서에서 읽어 채운다(`RuntimeConstants.java:441-446`). 단, 커스텀 파서를 런타임에 지정하는 `parser.class` 속성(`RuntimeConstants.java:452`)과 `$` 변경은 2.5에서 deprecated, 다음 메이저에서 제거 예정.
 
 ## 결과
 
-- 긍정: 문법을 `.jj` 파일 한 곳에서 관리. 커스텀 파서 생성이 빌드 스크립트로 자동화됨.
+- 긍정: 문법을 `Parser.jjt` 파일 한 곳에서 관리. 커스텀 파서 생성이 빌드 스크립트로 자동화됨.
 - 부정: 파서 수정 시 JavaCC 빌드 단계가 필요. IDE에서 `.jj` 파일 직접 편집 시 별도 도구 필요.
 - `$` 커스터마이징 deprecated → Markdown 출력 등 `$`를 다른 용도로 쓰는 사용처는 마이그레이션 필요.
 
@@ -82,3 +82,13 @@ JavaCC(Java Compiler Compiler)를 파서 생성기로 채택한다. `velocity-en
 - 2025-11-04: Add a few tests for block macros formal references (06a4a263)
 - 연결된 JIRA: [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789), [VELOCITY-706](https://issues.apache.org/jira/browse/VELOCITY-706), [VELOCITY-863](https://issues.apache.org/jira/browse/VELOCITY-863), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797)
 <!-- kn:generated:end -->
+
+## 정정 기록
+
+- 2026-10-23 · 문법 파일 경로: `src/main/javacc/Parser.jj`를 `velocity-engine-core/src/main/parser/Parser.jjt`(JJTree 문법)로 고쳤다.
+- 2026-10-23 · 특수문자 변경 방식: "`ParserConfiguration`으로 교체"를 "빌드 시점 속성 `parser.char.*`로 커스텀 파서를 생성"으로 고쳤다(`ParserConfiguration`은 설정된 문자를 담는 클래스).
+- 2026-10-23 · `parser.class`(런타임 지정)와 `$` 변경이 2.5부터 deprecated임을 명시하고, 결과 절의 `.jj` 표기를 `.jjt`로 고쳤다.
+- 이유: 진단(`/kn:init`)이 만든 설명의 사실 오류.
+- 근거: `velocity-engine-core/src/main/parser/Parser.jjt`(`:221-224`), `velocity-engine-core/pom.xml:40-43, 108-133`, `RuntimeConstants.java:441-452`, `velocity-custom-parser-example/pom.xml:37-45, 56-62`.
+- 관련: 고객 이슈 #6(FEAT-macro-definition 설정 키 오류)과 같은 묶음의 지도 오류 정정, 델타 `D-20261023-001`.
+- 결정 자체(JavaCC 채택, 이유, 대안)는 바뀌지 않았다.

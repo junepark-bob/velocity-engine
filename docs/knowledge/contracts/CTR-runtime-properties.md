@@ -26,7 +26,9 @@ links:
 owners:
 - role:tech-lead
 provenance:
+  code_fingerprint: sha256:fde564ec4679577eb0982b8c380e664acb67d1970c57617283de54010f0d36a6
   created_by: kn-new
+  fingerprint_commit: 85721ef9
   sources_of_knowledge: []
 related: []
 status: proposed
@@ -62,7 +64,8 @@ type: contract
 
 - 키 이름 변경 시 최소 1 마이너 버전 간 deprecated 키 병용 지원 후 제거.
 - 기본값 변경은 마이너 버전 업에서만 허용; 패치는 금지.
-- 새 키 추가 시 `RuntimeConstants.java` 상수 선언 + 이 파일 `## 변경 이력` 업데이트.
+- 새 키 추가 시 `RuntimeConstants.java`에 상수를 선언하고 기본값은 `velocity.properties`에 적는다.
+- 이 항목의 `## 변경 이력`은 `kn generate`가 채우는 생성 구역이므로 직접 고치지 않는다. 계약 항목은 추가만 허용되므로 기존 줄을 바꾸지 않고, 규칙이 바뀌면 끝에 줄을 더하거나 새 항목을 만든다.
 
 ## 변경 이력
 
@@ -86,3 +89,11 @@ type: contract
 - [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909) — changed-by
 - [VELOCITY-915](https://issues.apache.org/jira/browse/VELOCITY-915) — changed-by
 <!-- kn:generated:end -->
+
+## 정정 기록
+
+- 2026-10-23 · "호환성 정책"의 "새 키 추가 시 `RuntimeConstants.java` 상수 선언 + 이 파일 `## 변경 이력` 업데이트"를 "새 키는 `RuntimeConstants.java`에 상수를 선언하고 기본값은 `velocity.properties`에 적는다"로 고치고, `## 변경 이력`은 `kn generate`가 채우는 생성 구역이라 직접 고치지 않으며 계약 항목은 추가만 허용한다는 문장을 더했다.
+- 이유: 진단(`/kn:init`)이 만든 규칙 문장이 현재 구조와 어긋났다(변경 이력은 생성 구역, 계약 항목은 추가만). 이 문장을 따르던 항목 편집이 훅에 거부되는 일이 측정에서 4건 났다.
+- 근거: 이 항목의 `## 변경 이력`(`kn:generated` `source=git+jira`), `velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeConstants.java:80`, `velocity-engine-core/src/main/resources/org/apache/velocity/runtime/defaults/velocity.properties:38`(기본값 기록 위치 예: `directive.foreach.max_loops = -1`).
+- 관련: 고객 이슈 #6(FEAT-macro-definition 설정 키 오류)과 같은 묶음의 지도 오류 정정, 델타 `D-20261023-001`.
+- 계약 내용(키 이름 변경 시 deprecated 병용, 기본값은 마이너 버전에서만 변경)은 바뀌지 않았다.
