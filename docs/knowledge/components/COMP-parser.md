@@ -24,9 +24,9 @@ links:
     page_id: '1048577'
     page_owner: ai
     role: reference
-    synced_at: '2026-10-21T05:49:05+00:00'
-    synced_hash: sha256:107b0232653a970ef06758c53552252a7ae7b7b604964c17e2beb47551321d8f
-    synced_version: 2
+    synced_at: '2026-10-23T03:55:07+00:00'
+    synced_hash: sha256:e05121c217c5875d9072c38b115cd3740f2ca203cf27758c6423453a2ab5af09
+    synced_version: 3
     title: JavaCC VTL 파서 (COMP-parser)
   jira:
   - instance: apache
