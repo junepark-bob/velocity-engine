@@ -23,9 +23,10 @@ links:
     page_id: '1179649'
     page_owner: ai
     role: reference
-    synced_at: '2026-10-21T05:49:05+00:00'
-    synced_hash: sha256:8afd8da25b7c89f48e1b3fc92f344bbcc29680218af66645d23d7e900f1bf2e4
-    synced_version: 2
+    synced_at: '2026-10-23T03:55:19+00:00'
+    synced_hash: sha256:9a0da096fd95de63f91d39d6b9400c4abc269b24661a4e6ef0a61e402dd78c99
+    synced_origin: accepted
+    synced_version: 3
     title: '#foreach 반복 지시어 (FEAT-foreach-directive)'
   jira:
   - instance: apache
