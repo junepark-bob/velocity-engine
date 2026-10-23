@@ -96,3 +96,14 @@ Hello $name!
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
 - [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909) — changed-by
 <!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2021-02-25: Rebased what I could from PR #2 'Add generics parameters and remove unnecesary c… (74644012)
+- 2019-03-11: [engine] javadoc and indentation fixes (cff1b533)
+- 2019-03-10 [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909): [engine][VELOCITY-909] Propagate propnames changes thorough javadoc; some more r… (fec80129)
+- 2018-07-13: some javadoc bugs incidentally fixed (40f76190)
+- 연결된 JIRA: [VELOCITY-266](https://issues.apache.org/jira/browse/VELOCITY-266), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909)
+<!-- kn:generated:end -->

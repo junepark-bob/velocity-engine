@@ -62,13 +62,16 @@ ve.init(p);
 ## 커스텀 파서 (% 사용 시)
 %foreach($item in $list)$item%end
 ```
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
 - [SilentParseInclude](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730672) — reference
 - [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2019-06-17 [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917): [engine][VELOCITY-917] RuntimeServices shouldn't directly expose configured pars… (b7f22362)
+- 연결된 JIRA: [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917)
 <!-- kn:generated:end -->

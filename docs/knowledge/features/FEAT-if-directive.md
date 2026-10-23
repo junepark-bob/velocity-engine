@@ -86,10 +86,6 @@ Velocity truthy 규칙 (Java와 다름):
   유효 범위
 #end
 ```
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
@@ -100,4 +96,15 @@ Velocity truthy 규칙 (Java와 다름):
 - [VELOCITY-692](https://issues.apache.org/jira/browse/VELOCITY-692) — changed-by
 - [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2019-03-11: [engine] javadoc and indentation fixes (cff1b533)
+- 2016-12-13: [engine] optimization: use an unsynchronized string writer whenever possible (3451a6c2)
+- 2016-07-22: Applied Jarkko's memory saving patch that drops Tokens while parsing. Review and… (1a4e14ef)
+- 2016-07-17 [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776): [engine] keep macros in defining templates (applied reviewed patch from VELOCITY… (92d42e6f)
+- 연결된 JIRA: [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789), [VELOCITY-692](https://issues.apache.org/jira/browse/VELOCITY-692), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797)
 <!-- kn:generated:end -->

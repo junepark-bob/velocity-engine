@@ -53,12 +53,18 @@ $literal
 ## 중괄호로 경계 명시
 #set($tag = "<${elementName}>")
 ```
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
 - [VelocityCommaIfNeeded](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730686) — reference
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-09-11: Corner case: a final backslash in a double quoted string is deprecated (c9707967)
+- 2024-08-23: Normalize some tab-indented source files (08211a61)
+- 2024-02-16 [VELOCITY-977](https://issues.apache.org/jira/browse/VELOCITY-977): Upgrade Java Compiler Compiler to Version 7.0.13 (86cfcf41)
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2019-12-28 [VELOCITY-904](https://issues.apache.org/jira/browse/VELOCITY-904): [engine] Fix VELOCITY-904 again (ead820a5)
 <!-- kn:generated:end -->

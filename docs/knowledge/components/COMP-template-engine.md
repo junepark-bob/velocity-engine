@@ -69,10 +69,6 @@ type: component
 - `Template` → `ParserPool`: 최초 파싱 시 파서 인스턴스 대여
 - `Template` → `ResourceLoader`: 소스 파일 읽기
 - `Template.merge()` → `DirectiveEngine`: `#` 노드 실행 위임
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
@@ -83,4 +79,15 @@ type: component
 - [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909) — changed-by
 - [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916) — changed-by
 - [VELOCITY-958](https://issues.apache.org/jira/browse/VELOCITY-958) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-10-20: feat: VelocityEngine.getTemplate() 인코딩 명시화 + 지식 지도 보강 (F2/F3) (0b3e1d82)
+- 2022-07-25 [VELOCITY-958](https://issues.apache.org/jira/browse/VELOCITY-958): Make templates cloneable - fixes VELOCITY-958 (051f20a8)
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2021-02-25: Rebased what I could from PR #2 'Add generics parameters and remove unnecesary c… (74644012)
+- 2019-09-08 [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916): Add a second effect for the debugging flag runtime.log.track_location: display V… (5782c4cf)
+- 연결된 JIRA: [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909), [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916), [VELOCITY-958](https://issues.apache.org/jira/browse/VELOCITY-958)
 <!-- kn:generated:end -->

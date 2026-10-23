@@ -1,17 +1,23 @@
 ---
-id: COMP-event-handler
-type: component
-title: "이벤트 핸들러 (Event Handler)"
-status: active
-summary: "렌더링 생명주기에 훅을 삽입한다. 참조 삽입·잘못된 참조·메서드 예외 등 이벤트를 가로채 로깅·변환·예외 처리를 커스터마이징할 수 있다."
+agreement: ''
 aliases: []
-owners:
-- role:tech-lead
 classification: public
 code:
-  - velocity-engine-core/src/main/java/org/apache/velocity/app/event/
+- velocity-engine-core/src/main/java/org/apache/velocity/app/event/
+components: []
+id: COMP-event-handler
+links: {}
+owners:
+- role:tech-lead
 provenance:
   created_by: kn-new
+  sources_of_knowledge: []
+related: []
+status: active
+summary: 렌더링 생명주기에 훅을 삽입한다. 참조 삽입·잘못된 참조·메서드 예외 등 이벤트를 가로채 로깅·변환·예외 처리를 커스터마이징할 수
+  있다.
+title: 이벤트 핸들러 (Event Handler)
+type: component
 ---
 
 ## 역할
@@ -36,5 +42,12 @@ Spring의 `ApplicationEventPublisher`처럼 렌더링 중 발생하는 이벤트
 - `Template` 렌더링 → `EventHandlerUtil`: 이벤트 발생 시 핸들러 체인 순회
 - `DirectiveEngine` (`#include`/`#parse`) → `IncludeEventHandler`: 경로 처리 위임
 
-<!-- kn:generated:start source=git-log -->
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2021-02-25: Rebased what I could from PR #2 'Add generics parameters and remove unnecesary c… (74644012)
+- 2019-09-08 [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916): Add a second effect for the debugging flag runtime.log.track_location: display V… (5782c4cf)
+- 2019-06-05 [VELOCITY-915](https://issues.apache.org/jira/browse/VELOCITY-915): [engine][VELOCITY-915] Add new backward compatibility flags to mimic 1.7 behavio… (e1e49487)
+- 2019-03-11: [engine] javadoc and indentation fixes (cff1b533)
 <!-- kn:generated:end -->

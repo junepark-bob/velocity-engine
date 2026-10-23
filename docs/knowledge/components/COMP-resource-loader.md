@@ -55,13 +55,19 @@ type: component
 - `Template` → `ResourceLoader`: 파일 내용(InputStream) 요청
 - `ResourceCache` ↔ `Template`: AST 저장·조회
 - Spring 통합 → `SpringResourceLoader`: Spring `Resource` 추상화 기반 로더 추가
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
 - [StructuredGlobbingResourceLoader](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730675) — reference
 - [JpaResourceLoader](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730647) — reference
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-09-15: Resource loaders now enforce templates paths to stay in their configured root (16a69933)
+- 2026-04-30: Fix connections leaks in DatabaseResourceLoader ; deprecate DatabaseObjectsFacto… (c57d259b)
+- 2024-09-01: Drop CachingDatabaseObjectsFactory class (3484d89e)
+- 2024-08-28: Fix typos in comments (cd3ce494)
+- 2024-08-28: Various code cleanup to DataSourceResourceLoader (5d87ee8f)
 <!-- kn:generated:end -->

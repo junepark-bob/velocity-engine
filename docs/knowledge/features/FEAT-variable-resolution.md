@@ -64,13 +64,19 @@ $!user.middleName
 ## 중첩 프로퍼티 체인
 $order.customer.address.city
 ```
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
 - [CheckingForNull](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730613) — reference
 - [IfNullDirective](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=120730642) — reference
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-09-25: Reduce the scope of the deprecated flags/features: restore ${exp|altValue}, remo… (0c461087)
+- 2026-09-14: Deprecate createNewParser() method ; silent some internal deprecation warnings (0e443a8d)
+- 2026-09-10: Un-deprecate ${}} (d1914e91)
+- 2026-09-10: Un-deprecate informal navigation $foo.bar, introduce ${foo ?: bar} as alternativ… (6c6e84da)
+- 2026-06-13 [VELOCITY-995](https://issues.apache.org/jira/browse/VELOCITY-995): VTL syntax deprecation warnings (still off by default) (0b6fa31b)
 <!-- kn:generated:end -->

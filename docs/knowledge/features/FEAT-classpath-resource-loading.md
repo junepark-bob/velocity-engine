@@ -77,10 +77,6 @@ src/main/resources/
   templates/
     report.vm    →  클래스패스: templates/report.vm
 ```
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
@@ -91,4 +87,15 @@ src/main/resources/
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
 - [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909) — changed-by
 - [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-09-15: Resource loaders now enforce templates paths to stay in their configured root (16a69933)
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2019-09-08 [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916): Add a second effect for the debugging flag runtime.log.track_location: display V… (5782c4cf)
+- 2019-03-10 [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909): [engine][VELOCITY-909] Propagate propnames changes thorough javadoc; some more r… (fec80129)
+- 2017-02-20: [engine] several coding style fixes (Michael remarks) (95aeb9d5)
+- 연결된 JIRA: [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909), [VELOCITY-916](https://issues.apache.org/jira/browse/VELOCITY-916)
 <!-- kn:generated:end -->

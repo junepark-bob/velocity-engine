@@ -70,10 +70,6 @@ VTL 문법을 파싱해 AST(추상 구문 트리)를 생성한다. JavaCC로 생
 - `RuntimeInstance` → `ParserPool`: 초기화 시 풀 생성, 파싱 시 인스턴스 대여·반납
 - `Template` → `ParserPool`: 최초 로딩 시 파싱 요청
 - `ParserPool` ↔ `DirectiveEngine`: 파서가 `#` 노드 인식 후 지시어 엔진에 처리 위임
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
@@ -83,4 +79,15 @@ VTL 문법을 파싱해 AST(추상 구문 트리)를 생성한다. JavaCC로 생
 - [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
 - [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-09-14: Deprecate createNewParser() method ; silent some internal deprecation warnings (0e443a8d)
+- 2024-07-30: Fix log messages (8945a787)
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2019-06-17 [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917): [engine][VELOCITY-917] RuntimeServices shouldn't directly expose configured pars… (b7f22362)
+- 2017-01-26: [engine] remove useless isXXXEnabled() tests (858859ca)
+- 연결된 JIRA: [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797), [VELOCITY-917](https://issues.apache.org/jira/browse/VELOCITY-917)
 <!-- kn:generated:end -->

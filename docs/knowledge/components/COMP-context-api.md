@@ -67,10 +67,6 @@ type: component
 - `Template.merge()` → `InternalContextAdapterImpl`: 렌더링 시 내부 컨텍스트로 래핑
 - `DirectiveEngine` → `Context`: `#set`, `#foreach` 루프 변수 주입
 - `Uberspector` → `Context`: `$obj.prop` 평가 시 객체 꺼내기
-
-<!-- kn:generated:start source=git-log -->
-<!-- kn:generated:end -->
-
 ## 상세 문서
 
 <!-- kn:generated:start source=links -->
@@ -80,4 +76,15 @@ type: component
 - [VELOCITY-266](https://issues.apache.org/jira/browse/VELOCITY-266) — changed-by
 - [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
+<!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2021-02-25: A lot of almost purely cosmetic code cleanups (836d28fa)
+- 2021-02-25: Rebased what I could from PR #2 'Add generics parameters and remove unnecesary c… (74644012)
+- 2019-03-11: [engine] javadoc and indentation fixes (cff1b533)
+- 2019-03-10 [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909): [engine][VELOCITY-909] Propagate propnames changes thorough javadoc; some more r… (fec80129)
+- 2018-07-13: some javadoc bugs incidentally fixed (40f76190)
+- 연결된 JIRA: [VELOCITY-712](https://issues.apache.org/jira/browse/VELOCITY-712), [VELOCITY-266](https://issues.apache.org/jira/browse/VELOCITY-266), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797)
 <!-- kn:generated:end -->

@@ -66,6 +66,15 @@ type: contract
 
 ## 변경 이력
 
+<!-- kn:generated:start source=git+jira -->
+- 2026-09-15: Deprecate parser.class property, as well as DOLLAR char customization (ae5215e8)
+- 2026-09-15: Fix: #evaluate() max depth should honor directive.parse.max_depth (ae068a34)
+- 2026-09-13: Deprecate mutable integer ranges (runtime.immutable_ranges = false) (614ef32d)
+- 2026-09-13: Deprecate velocimacro.enable_bc_mode without replacement (9e53f0f1)
+- 2026-09-10: Un-deprecate informal navigation $foo.bar, introduce ${foo ?: bar} as alternativ… (6c6e84da)
+- 연결된 JIRA: [VELOCITY-542](https://issues.apache.org/jira/browse/VELOCITY-542), [VELOCITY-904](https://issues.apache.org/jira/browse/VELOCITY-904), [VELOCITY-892](https://issues.apache.org/jira/browse/VELOCITY-892), [VELOCITY-909](https://issues.apache.org/jira/browse/VELOCITY-909), [VELOCITY-915](https://issues.apache.org/jira/browse/VELOCITY-915)
+<!-- kn:generated:end -->
+
 - 2026-10-20: 초기 계약 작성. `INPUT_ENCODING`, `MAX_NUMBER_LOOPS`, `RESOURCE_LOADERS` 등 8개 핵심 키 정의.
 
 ## 상세 문서

@@ -71,3 +71,14 @@ JavaCC(Java Compiler Compiler)를 파서 생성기로 채택한다. `velocity-en
 - [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776) — changed-by
 - [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797) — changed-by
 <!-- kn:generated:end -->
+
+## 변경 이력
+
+<!-- kn:generated:start source=git+jira -->
+- 2026-09-25: Reduce the scope of the deprecated flags/features: restore ${exp|altValue}, remo… (0c461087)
+- 2026-09-10: Un-deprecate informal navigation $foo.bar, introduce ${foo ?: bar} as alternativ… (6c6e84da)
+- 2026-06-13 [VELOCITY-995](https://issues.apache.org/jira/browse/VELOCITY-995): VTL syntax deprecation warnings (still off by default) (0b6fa31b)
+- 2026-04-24: Fix javacc warnings (3c544916)
+- 2025-11-04: Add a few tests for block macros formal references (06a4a263)
+- 연결된 JIRA: [VELOCITY-789](https://issues.apache.org/jira/browse/VELOCITY-789), [VELOCITY-706](https://issues.apache.org/jira/browse/VELOCITY-706), [VELOCITY-863](https://issues.apache.org/jira/browse/VELOCITY-863), [VELOCITY-776](https://issues.apache.org/jira/browse/VELOCITY-776), [VELOCITY-797](https://issues.apache.org/jira/browse/VELOCITY-797)
+<!-- kn:generated:end -->
