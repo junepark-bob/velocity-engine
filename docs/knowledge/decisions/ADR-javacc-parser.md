@@ -28,7 +28,7 @@ owners:
 provenance:
   code_fingerprint: sha256:6d578e96fa87577e4b3e6e3b285bfbdbc7a92987c74092dc84642322c0cf84da
   created_by: kn-new
-  fingerprint_commit: 85721ef9
+  fingerprint_commit: 8dd49ad1
   sources_of_knowledge: []
 related: []
 status: active

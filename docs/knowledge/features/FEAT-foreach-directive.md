@@ -47,9 +47,9 @@ links:
 owners:
 - role:tech-lead
 provenance:
-  code_fingerprint: sha256:6905594b4aac63e8202b5ca7c0c4ece534baece3401d4d9fb495072108eb89ce
+  code_fingerprint: sha256:7230837eee4e82f36c44a878b1167382918fd6766435132799c30c0bd4c713ac
   created_by: kn-new
-  fingerprint_commit: 6d21dbf7
+  fingerprint_commit: 8dd49ad1
   sources_of_knowledge: []
 related: []
 status: active
@@ -70,6 +70,12 @@ type: feature
 3. `Iterable`, 배열, `Map.entrySet()` 중 적절한 이터레이터 선택
 4. 반복마다 `$item`을 컨텍스트에 put, 블록 렌더링, 마지막에 제거
 5. `$velocityCount`(1-based), `$velocityHasNext`, `$foreach.index`, `$foreach.last` 내장 제공
+
+## 반복 상한과 경고 (맥락)
+
+`directive.foreach.max_loops`를 1 이상으로 두면 그 횟수에서 반복이 멈추고 나머지 항목은 출력되지 않는다. 예전에는 이 잘림이 아무 흔적 없이 일어나, 운영팀이 출력이 잘린 줄 모르고 장애 분석이 늦어진 일이 있었다. 그래서 상한 때문에 항목이 남은 채 끝나면 템플릿 이름·줄·열과 상한값을 담은 WARN 로그를 `#foreach` 실행당 한 번 남긴다(`#break`로 멈춘 경우는 제외).
+
+기본값(무제한)과 상한에서 멈추는 동작 자체는 기존 템플릿 호환성 때문에 바꾸지 않았다. 로그는 렌더링 전체 기준 중복 제거가 아니라서 같은 템플릿을 반복 렌더링하면 그만큼 남는다. 설정 키 계약은 [CTR-runtime-properties](../contracts/CTR-runtime-properties.md).
 
 ## 사용 예시
 
