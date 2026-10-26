@@ -22,7 +22,9 @@ links:
 owners:
 - role:tech-lead
 provenance:
+  code_fingerprint: sha256:1876589de1104369459937594b017da43c22939336aab4dbef04d7b2131d3545
   created_by: kn-new
+  fingerprint_commit: 8dd49ad1
   sources_of_knowledge: []
 related: []
 status: active

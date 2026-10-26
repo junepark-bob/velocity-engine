@@ -28,7 +28,7 @@ owners:
 provenance:
   code_fingerprint: sha256:fde564ec4679577eb0982b8c380e664acb67d1970c57617283de54010f0d36a6
   created_by: kn-new
-  fingerprint_commit: 85721ef9
+  fingerprint_commit: 8dd49ad1
   sources_of_knowledge: []
 related: []
 status: proposed
@@ -97,3 +97,8 @@ type: contract
 - 근거: 이 항목의 `## 변경 이력`(`kn:generated` `source=git+jira`), `velocity-engine-core/src/main/java/org/apache/velocity/runtime/RuntimeConstants.java:80`, `velocity-engine-core/src/main/resources/org/apache/velocity/runtime/defaults/velocity.properties:38`(기본값 기록 위치 예: `directive.foreach.max_loops = -1`).
 - 관련: 고객 이슈 #6(FEAT-macro-definition 설정 키 오류)과 같은 묶음의 지도 오류 정정, 델타 `D-20261023-001`.
 - 계약 내용(키 이름 변경 시 deprecated 병용, 기본값은 마이너 버전에서만 변경)은 바뀌지 않았다.
+
+## 보충 기록
+
+- 2026-10-26 · `directive.foreach.max_loops` 상한에 닿아 `#foreach` 반복이 잘리면(남은 항목이 있고 `#break`가 아닐 때) `Foreach`가 템플릿 이름·줄·열과 상한값을 담은 WARN 로그를 `#foreach` 실행당 한 번 남긴다. 기본값(무제한)과 상한에서 멈추는 동작은 그대로다.
+- 근거: `velocity-engine-core/src/main/java/org/apache/velocity/runtime/directive/Foreach.java`(`render()`), 델타 `D-20261026-001`.

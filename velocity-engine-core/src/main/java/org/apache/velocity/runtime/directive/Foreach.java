@@ -262,6 +262,7 @@ public class Foreach extends Directive
         }
 
         int count = 1;
+        boolean stopped = false;
         while (count <= maxNbrLoops && i.hasNext())
         {
             count++;
@@ -282,6 +283,7 @@ public class Foreach extends Directive
             {
                 if (stop.isFor(this))
                 {
+                    stopped = true;
                     break;
                 }
                 else
@@ -291,6 +293,11 @@ public class Foreach extends Directive
                     throw stop;
                 }
             }
+        }
+        if (!stopped && i.hasNext())
+        {
+            log.warn("#foreach at {} stopped after {} iterations because {} is reached; remaining items are not rendered",
+                     StringUtils.formatFileString(node), maxNbrLoops, RuntimeConstants.MAX_NUMBER_LOOPS);
         }
         clean(context, o);
         /*

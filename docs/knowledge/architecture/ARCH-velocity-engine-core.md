@@ -37,9 +37,9 @@ links:
 owners:
 - role:architect
 provenance:
-  code_fingerprint: sha256:32483c579b5cc1d8114f5c9845707945cf50b8395465d515552167d619b43258
+  code_fingerprint: sha256:551f0af0b24864443d01b10c6f8845de452db1865a3f943c9fc9d469cd5c1883
   created_by: kn-new
-  fingerprint_commit: 6d21dbf7
+  fingerprint_commit: 8dd49ad1
   sources_of_knowledge: []
 related: []
 status: active
